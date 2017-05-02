@@ -19,6 +19,7 @@ html {
 body {
   font: 14px/36px "open-sans", sans-serif;
   color: #96948e;
+  background-color: #3a3838;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -86,6 +87,11 @@ p:first-of-type {
 #logo{
   height: 70px;
 }
+#logo-mobile-menu{
+  margin: 5px auto;
+  display: block;
+  width: 30%;
+}
 
 /*Fim do Logo*/
 
@@ -93,4 +99,57 @@ p:first-of-type {
 .header{
   padding: 7px 40px;
 }
+#navbar{
+  border: none!important;
+}
+.navbar-nav{
+  padding-left: 20%;
+}
+.navbar-nav li{
+  margin-top: 5px;
+  margin-left: 30px;
+}
+.navbar-nav li.presentation a{
+  padding: 30px!important;
+}
+.navbar-nav li.presentation a:hover{
+  color: #000000!important;
+  background-color: #ffffff;
+}
+.navbar-nav li a{
+  color: #ffffff!important;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 0!important;
+}
+.navbar-nav li a:hover{
+  background-color: white;
+  color: #000000;
+}
+.navbar-nav li #logo:hover{
+  background-color: transparent;
+}
+.navbar-toggle{
+  margin-top: 15px;
+}
+.header .navbar-default{
+  background-color: #3a3838;
+  border: none;
+}
+.center{
+  margin: 0 auto;
+}
+.grey{
+  background-color: #3a3838;
+}
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #ffffff!important;
+}
+@media (min-width: 768px){
+  #logo-mobile-menu{
+    display: none;
+  }
+}
+
 /*Fim do Header*/
