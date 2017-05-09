@@ -85,7 +85,8 @@ p:first-of-type {
 
 /*Logo*/
 #logo{
-  height: 70px;
+  height: 75px;
+  padding: 10px;
 }
 #logo-mobile-menu{
   margin: 5px auto;
@@ -97,17 +98,16 @@ p:first-of-type {
 
 /*Header*/
 .header{
-  padding: 7px 40px;
 }
 #navbar{
   border: none!important;
 }
 .navbar-nav{
-  padding-left: 20%;
+  padding-left: 10%;
+  width: 100%;
 }
 .navbar-nav li{
-  margin-top: 5px;
-  margin-left: 30px;
+  margin-left: 60px;
 }
 .navbar-nav li.presentation a{
   padding: 30px!important;
@@ -146,6 +146,14 @@ p:first-of-type {
 .navbar-default .navbar-toggle .icon-bar{
   background-color: #ffffff!important;
 }
+.navbar-default{
+  margin: 0;
+}
+#alagou{
+  float: right;
+  text-transform: uppercase;
+  background-color: #df2a00;
+}
 @media (min-width: 768px){
   #logo-mobile-menu{
     display: none;
@@ -153,3 +161,76 @@ p:first-of-type {
 }
 
 /*Fim do Header*/
+
+/*Página inicial - mapa estático*/
+.static-map{
+  background-image: url("images/map.png");
+  height: 330px;
+}
+.static-map input{
+  border-radius: 10px;
+  border: 1px solid transparent;
+  width: 450px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 35px;
+  padding: 0 15px;
+  outline: none;
+}
+.static-map h3{
+  padding-top: 60px;
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bolder;
+}
+.static-map h4{
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.italic{
+  font-style: italic;
+  font-weight: 500;
+}
+#phone{
+  margin-top: -100px;
+  width: 300px;
+  margin-left: 150px;
+}
+
+.how-it-works{
+  background-color: #ffffff;
+}
+.instructions{
+  padding: 50px 80px 0 100px;
+  line-height: 25px;
+}
+.instructions b{
+  font-weight: 500;
+}
+.instructions img{
+  display: block;
+  margin: 0 auto;
+  height: 55px;
+}
+.instructions .col-md-10{
+  margin-bottom: 50px;
+}
+.instructions h1{
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 45px;
+  color: #506dc4;
+  margin-bottom: 35px;
+  padding-left: 35px;
+}
+.instructions .icon_pin-text{
+  color: #0066ec;
+}
+.instructions .icon_star-text{
+  color: #ee832e;
+}
+.instructions .icon_alert-text{
+  color: #df2a00;
+}

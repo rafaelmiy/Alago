@@ -44,7 +44,7 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="presentation"><a href="map.html">Mapa</a></li>
+              <li class="presentation"><a href="#">Mapa</a></li>
               <li class="presentation"><a href="#about">Vai chover?</a></li>
               <li><img id="logo" src="images/logo_alagou.png"></li>
               <li class="presentation"><a href="#">Sobre</a></li>
@@ -55,39 +55,14 @@
         </div>
       </nav>
     </div>
-
-    <div class="static-map">
-      <h3>Descubra os ponto de alagamento próximos de você</h3>
-      <input type="text" placeholder="Bairro, rua, endereço...">
-      <h4><b>Mais pesquisados:</b> <b class="italic">Higienópolis | Penha | Alphaville | Lapa</b></h4>
-    </div>
-
-    <div class="how-it-works row">
-      <div class="col-md-4">
-        <img id="phone" src="images/phone.png">
-      </div>
-      <div class="col-md-8 instructions">
-        <h1>Como funciona</h1>
-        <div class="col-md-2"><img src="images/icon_pin.png"></div>
-        <div class="col-md-10">
-          <b class="icon_pin-text">MAPAS - ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
-          urna arcu. In eleifend nec sapien in blandit. Maecenas leo risus,
-          venenatis sit amet metus nec, vulputate efficitur urna.</b>
-        </div>
-        <div class="col-md-2"><img src="images/star.png"></div>
-        <div class="col-md-10">
-          <b class="icon_star-text">FAVORITOS - ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
-          urna arcu. In eleifend nec sapien in blandit. Maecenas leo risus,
-          venenatis sit amet metus nec, vulputate efficitur urna.</b>
-        </div>
-        <div class="col-md-2"><img src="images/icon_alert.png"></div>
-        <div class="col-md-10">
-          <b class="icon_alert-text">ALERTAS - ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
-          urna arcu. In eleifend nec sapien in blandit. Maecenas leo risus,
-          venenatis sit amet metus nec, vulputate efficitur urna.</b>
-        </div>
-      </div>
-    </div>
+    
+    <!-- Mapa -->
+    <div id="map"></div>
+    <script src="script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ2acXgmsIhkEqoD1o3_ZU4rtdNP1M66I&callback=initMap">
+    </script>
+    <!-- Fim do Mapa -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
