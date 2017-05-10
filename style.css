@@ -165,7 +165,9 @@ p:first-of-type {
 /*Página inicial - mapa estático*/
 .static-map{
   background-image: url("images/map.png");
+  background-size: 100%;
   height: 330px;
+  background-attachment: fixed;
 }
 .static-map input{
   border-radius: 10px;
@@ -234,3 +236,64 @@ p:first-of-type {
 .instructions .icon_alert-text{
   color: #df2a00;
 }
+.app{
+  padding-left: 85px;
+}
+.app div{
+  text-align: center;
+}
+.app b{
+  font-size: 40px;
+  margin-left: 10px;
+  color: #007df9;
+  font-weight: 200;
+}
+.app img, .app a{
+  height: 50px;
+}
+.app .col-md-5{
+  padding-top: 45px;
+}
+.app .app_store, .app .play_store{
+  margin-top: 30px;
+  height: 50px;
+}
+.app .play_store{
+  margin-left: 35px;
+}
+#icon{
+  margin-top: -20px;
+}
+
+/* Onda no fim da página */
+#waves{
+  background-color: #ffffff;
+  height: 160px;
+}
+#wave, #wave2, #wave3{
+  width: 100%;
+  height: 200px;
+  background-color: transparent;
+  margin-top: -40px;
+}
+#wave{
+  position: absolute;
+}
+#wave2, #wave3{
+  position: absolute;
+}
+/* Fim da Onda */
+.blue-band{
+  width: 100%;
+  height: 50px;
+  background-color: #27358d;
+}
+
+/* Footer */
+.footer{
+  padding: 20px 90px;
+}
+.footer img.logo{
+  height: 65px;
+}
+/* Fim do Footer */
