@@ -43,6 +43,7 @@
     <![endif]-->
     <!-- modified CSS -->
     <link href="style.css" rel="stylesheet">
+    <link href="styles/login.css" rel="stylesheet">
   </head>
 
   <body>
@@ -64,7 +65,7 @@
               <li class="presentation"><a href="#about">Vai chover?</a></li>
               <li><a href="index.html"><img id="logo" href="/" src="images/logo_alago.png"></a></li>
               <li class="presentation"><a href="#">Sobre</a></li>
-              <li class="presentation"><a href="login.html">Login</a></li>
+              <li class="presentation"><a href="#">Login</a></li>
               <li class="presentation" id="alagou"><a href="#">alagou!</a></li>
             </ul>
           </div>
@@ -72,58 +73,47 @@
       </nav>
     </div>
 
-    <div class="static-map">
-      <h3>Descubra os pontos de alagamento próximos de você</h3>
-      <input type="text" class="searchbar" placeholder="Bairro, rua, endereço...">
-      <img src="images/glass.png">
-      <h4><b>Mais pesquisados:</b> <b class="italic">Higienópolis | Penha | Alphaville | Lapa</b></h4>
-    </div>
-
-    <div class="how-it-works row">
-      <div class="col-md-4">
-        <img id="phone" src="images/phone.png">
+    <div class="materialContainer">
+      <div class="box">
+        <div class="title">LOGIN</div>
+        <div class="input">
+           <label for="name">E-mail</label>
+           <input type="text" name="name" id="name">
+           <span class="spin"></span>
+        </div>
+        <div class="input">
+           <label for="pass">Senha</label>
+           <input type="password" name="pass" id="pass">
+           <span class="spin"></span>
+        </div>
+        <div class="button login">
+           <button><span>Entrar</span> <i class="fa fa-check"></i></button>
+        </div>
+        <a href="" class="pass-forgot">Esqueceu a senha?</a>
       </div>
-      <div class="col-md-8 instructions">
-        <h1>Como funciona</h1>
-        <div class="col-md-2"><img src="images/icon_pin.png"></div>
-        <div class="col-md-10">
-          <b class="icon_pin-text">MAPAS - ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
-          urna arcu. In eleifend nec sapien in blandit. Maecenas leo risus,
-          venenatis sit amet metus nec, vulputate efficitur urna.</b>
+      <div class="overbox">
+        <div class="material-button alt-2"><span class="shape"></span></div>
+        <div class="title">CADASTRAR</div>
+        <div class="input">
+           <label for="regname">E-mail</label>
+           <input type="text" name="regname" id="regname">
+           <span class="spin"></span>
         </div>
-        <div class="col-md-2"><img src="images/star.png"></div>
-        <div class="col-md-10">
-          <b class="icon_star-text">FAVORITOS - ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
-          urna arcu. In eleifend nec sapien in blandit. Maecenas leo risus,
-          venenatis sit amet metus nec, vulputate efficitur urna.</b>
+        <div class="input half">
+           <label for="regpass">Senha</label>
+           <input type="password" name="regpass" id="regpass">
+           <span class="spin"></span>
         </div>
-        <div class="col-md-2"><img src="images/icon_alert.png"></div>
-        <div class="col-md-10">
-          <b class="icon_alert-text">ALERTAS - ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
-          urna arcu. In eleifend nec sapien in blandit. Maecenas leo risus,
-          venenatis sit amet metus nec, vulputate efficitur urna.</b>
+        <div class="input half">
+           <label for="reregpass">Repita a senha</label>
+           <input type="password" name="reregpass" id="reregpass">
+           <span class="spin"></span>
         </div>
-      </div>
-      <div class="col-md-12 app">
-        <div class="col-md-5">
-          <img id="icon" src="images/icon.png">
-          <b>Baixe nosso app</b>
-          <br>
-          <a href="#"><img class="app_store" src="images/app_store.png"></a>
-          <a href="#"><img class="play_store" src="images/play_store.png"></a>
+        <div class="button">
+           <button><span>Entrar</span></button>
         </div>
       </div>
     </div>
-    
-    <div id="waves">
-      <script src="scripts/script_wave.js"></script>
-      <canvas id='wave' width='500' height='200'></canvas>
-      <script src="scripts/script_wave_2.js"></script>
-      <canvas id='wave2' width='500' height='200'></canvas>
-      <script src="scripts/script_wave_3.js"></script>
-      <canvas id='wave3' width='500' height='200'></canvas>
-    </div>
-    <div class="blue-band"></div>
 
     <div class="footer row">
       <div class="col-md-6">
@@ -136,5 +126,6 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts/login.js"></script>
   </body>
 </html>
