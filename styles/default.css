@@ -288,6 +288,12 @@ p:first-of-type {
   height: 50px;
   background-color: #27358d;
 }
+.searchBar{
+  background: url(../images/glass.png) no-repeat right center;
+  background-color: white;
+  background-size: 25px;
+  background-position-x: 98%;
+}
 
 /* Footer */
 .footer{
