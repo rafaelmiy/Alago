@@ -19,7 +19,7 @@ html {
 body {
   font: 14px/36px "open-sans", sans-serif;
   color: #96948e;
-  background-color: #3a3838;
+  background-color: #fefefe;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -87,6 +87,7 @@ p:first-of-type {
 #logo{
   height: 75px;
   padding: 10px;
+  margin-top: 2px;
 }
 #logo-mobile-menu{
   margin: 5px auto;
@@ -97,27 +98,52 @@ p:first-of-type {
 /*Fim do Logo*/
 
 /*Header*/
+
 .header{
 }
 #navbar{
   border: none!important;
 }
 .navbar-nav{
-  padding-left: 10%;
-  width: 100%;
+  /*padding-left: 10%;*/
+  width: 89%;
 }
 .navbar-nav li{
-  margin-left: 60px;
+  /*margin-left: 60px;*/
 }
-.navbar-nav li.presentation a{
+.navbar-nav li.presentation a.link{
+  padding: 4px!important;
+  margin: 30px auto 0;
+  font-weight: 500;
+}
+.navbar-nav li.presentation a.link.active{
+  font-weight: 600;
+  border-bottom: 2px solid #1f58a9;
+}
+.navbar-nav li.presentation a.link.mapa{
+  width: 55px;
+}
+.navbar-nav li.presentation a.link.vai-chover{
+  width: 110px;
+}
+.navbar-nav li.presentation a.link.sobre{
+  width: 60px;
+}
+.navbar-nav li.presentation a.link.login{
+  width: 60px;
+}
+.navbar-nav li.presentation a .active{
+  border-bottom: 1px solid white;
+}
+.navbar-nav li.presentation a.btn-alago{
   padding: 30px!important;
+  color: #ffffff!important;
 }
-.navbar-nav li.presentation a:hover{
-  color: #000000!important;
-  background-color: #ffffff;
+.navbar-nav li.presentation a.link:hover{
+  border-bottom: 2px solid #1f58a9;
 }
 .navbar-nav li a{
-  color: #ffffff!important;
+  color: #1f58a9!important;
   text-align: center;
   font-size: 18px;
   font-weight: bolder;
@@ -130,18 +156,28 @@ p:first-of-type {
 .navbar-nav li #logo:hover{
   background-color: transparent;
 }
+.navbar-nav.alago-button{
+  width: 10.3%;
+}
+.navbar-nav.alago-links .presentation{
+  width: 17.5%;
+}
+.navbar-nav.alago-links .logo{
+  width: 23%;
+}
 .navbar-toggle{
   margin-top: 15px;
 }
 .header .navbar-default{
-  background-color: #3a3838;
+  background-color: #ffffff;
   border: none;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3), inset 0 0 10px rgba(0,0,0,0.1);
 }
 .center{
   margin: 0 auto;
 }
 .grey{
-  background-color: #3a3838;
+  background-color: #ffffff;
 }
 .navbar-default .navbar-toggle .icon-bar{
   background-color: #ffffff!important;
@@ -298,9 +334,10 @@ p:first-of-type {
 /* Footer */
 .footer{
   padding: 20px 90px;
+  background: #02546c;
 }
 .footer img.logo{
-  height: 65px;
+  height: 45px;
 }
 /* Fim do Footer */
 
