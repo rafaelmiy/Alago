@@ -341,3 +341,15 @@ p:first-of-type {
 }
 /* Fim do Footer */
 
+/* About */
+a.about-logo{
+  display: block;
+  background-color: #4158b5;
+}
+a.about-logo img{
+  display: block;
+  margin: 0 auto!important;
+  padding: 15px!important;
+}
+/* Fim do About */
+
