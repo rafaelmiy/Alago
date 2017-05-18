@@ -6,6 +6,7 @@
 
 		<link rel="stylesheet" type="text/css" href="styles/jquery.fullPage.css" />
 		<link rel="stylesheet" type="text/css" href="styles/about.css" />
+		<link rel="icon" type="image/png" href="images/icon.png" />
 		<style>
 
 
@@ -64,11 +65,40 @@
 		/* Section 0
 		* --------------------------------------- */
 		#section0{
-			padding: 60px 0;
+			/*padding: 60px 0;*/
+		}
+		#section0 .header .about-logo{
+			height: 80px;
 		}
 		#section0 img{
 			height: 100%;
-			margin: 40px 0 0 0;
+			/*margin: 40px 0 0 0;*/
+		}
+		#section0 .header{
+			margin-bottom: 45px;
+		    box-shadow: 0 5px 10px rgba(0,0,0,0.3), inset 0 0 10px rgba(0,0,0,0.1);
+		}
+		#section0 .phone-about{
+			/*width: 160px;*/
+		}
+		.section0-text{
+			width: 50%;
+			float: left;
+			padding: 20px 0 0 10%;
+			margin-top: 10%;
+		}
+		.section0-text h1{
+			margin-bottom: 20px;
+		}
+		.section0-text h3{
+		    font-size: 18px;
+    		font-style: italic;
+    		margin-bottom: 60px;
+		}
+		.section0-image{
+			width: 50%;
+			float: right;
+			height: 100%;
 		}
 
 
@@ -100,10 +130,10 @@
 			margin-top: -325px;
 			margin-left: -747px;
 			width: 800px;
-			height: 696px;
+			height: 70%;
 		}
 		#section1 img{
-			height: 100%;
+			width: 360px;
 		}
 		/*screen resolutions between 620px and 800px*/
 		@media all and (min-width: 620px) and (max-width: 800px){
@@ -351,7 +381,7 @@
 
 	</head>
 	<body>
-		<a href="index.html" class="about-logo"><img id="logo" href="/" src="images/logo_alago_white.png"></a>
+
 		<div id="fullpage">
 			<div id="staticImg">
 				<div class="imgsContainer">
@@ -360,20 +390,30 @@
 			</div>
 
 			<div class="section " id="section0">
-				<h1>O Problema</h1>
-				<img src="imgs/iphone1.jpg" alt="iphone" />
+				<div class="header">
+					<a href="index.html" class="about-logo"><img href="/" src="images/logo_alago_white.png"></a>
+				</div>
+				<div class="section0-text">
+					<!-- <img src="images/logo_alago.png"> -->
+					<h1>Alago</h1>
+					<h3>"A maneira mais rápida e segura de fugir das enchentes"</h3>
+					<!-- <img src="imgs/iphone1.jpg" alt="iphone" /> -->
+				</div>
+				<div class="section0-image">
+					<img class="phone-about" href="/" src="images/phone.png">
+				</div>
 			</div>
 			<div class="section" id="section1">
 				<div class="wrap">
 					<div class="imgsContainer">
-						<img src="imgs/iphone2.png" alt="iphone" id="iphone2" />
-						<img src="imgs/iphone3.png" alt="iphone" id="iphone3" />
-						<img src="imgs/iphone4.png" alt="iphone" id="iphone4" />
+						<img src="images/phone.png" alt="iphone" id="iphone2" />
+						<img src="images/phone.png" alt="iphone" id="iphone3" />
+						<!-- <img src="images/phone.png" alt="iphone" id="iphone4" /> -->
 					</div>
 
 					<div class="box">
-						<h2>A powerful plugin</h2>
-						 <strong>fullPage.js</strong>  callbacks allow you to create amazing dynamic sites with a bit of imagination. This example tries to reproduce the Apple iPhone-5c website animations as an example of what fullPage.js is capable of.
+						<h2>Onde você estiver</h2>
+						Com a plataforma <strong>Alago</strong> você monitora seus pontos favoritos de onde estiver e recebe notificação de alterações de risco.
 					</div>
 				</div>
 			</div>
