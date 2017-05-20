@@ -194,6 +194,10 @@ p:first-of-type {
 }
 
 @media only screen and (max-width: 768px){
+  div.static-map h3{
+    padding-top: 65px;
+  }
+
   .navbar-header{
     display: initial;
   }
