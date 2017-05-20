@@ -197,6 +197,9 @@ p:first-of-type {
   div.static-map h3{
     padding-top: 65px;
   }
+  .app img.play_store{
+    margin-left: 20px;
+  }
 
   .navbar-header{
     display: initial;
