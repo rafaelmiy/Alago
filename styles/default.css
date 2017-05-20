@@ -79,20 +79,20 @@ p:first-of-type {
 
 #map{
   height: 80vh;
-  width: 75%;
+  width: 100%;
 }
  /*Fim do Mapa*/
 
 /*Logo*/
 #logo{
-  height: 75px;
-  padding: 10px;
-  margin-top: 2px;
+  height: 60px;
+  padding: 8px;
 }
 #logo-mobile-menu{
-  margin: 5px auto;
+  margin: 0 auto;
   display: block;
-  width: 30%;
+  height: 60px;
+  padding: 8px;
 }
 
 /*Fim do Logo*/
@@ -113,7 +113,7 @@ p:first-of-type {
 }
 .navbar-nav li.presentation a.link{
   padding: 4px!important;
-  margin: 30px auto 0;
+  margin: 17px auto 0;
   font-weight: 400;
 }
 .navbar-nav li.presentation a.link.active{
@@ -136,7 +136,7 @@ p:first-of-type {
   border-bottom: 1px solid white;
 }
 .navbar-nav li.presentation a.btn-alago{
-  padding: 30px!important;
+  padding: 20px 30px!important;
   color: #ffffff!important;
 }
 .navbar-nav li.presentation a.link:hover{
@@ -147,7 +147,7 @@ p:first-of-type {
   text-align: center;
   font-size: 18px;
   font-weight: bolder;
-  padding: 0!important;
+  padding: 0;
 }
 .navbar-nav li a:hover{
   background-color: white;
@@ -172,29 +172,125 @@ p:first-of-type {
   background-color: #ffffff;
   border: none;
   box-shadow: 0 5px 10px rgba(0,0,0,0.3), inset 0 0 10px rgba(0,0,0,0.1);
+  margin: 0;
+  height: 60px;
 }
 .center{
   margin: 0 auto;
 }
 .grey{
   background-color: #ffffff;
+  height: 60px;
 }
-.navbar-default .navbar-toggle .icon-bar{
-  background-color: #ffffff!important;
-}
-.navbar-default{
-  margin: 0;
-}
+
 #alagou{
   float: right;
   text-transform: uppercase;
   background-color: #df2a00;
 }
-@media (min-width: 768px){
-  #logo-mobile-menu{
+
+.navbar-header{
+  display: none;
+}
+
+@media only screen and (max-width: 768px){
+  .navbar-header{
+    display: initial;
+  }
+  #logo{
     display: none;
   }
+  #navbar{
+    padding: 0;
+  }
+  .navbar-nav{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navbar-nav.alago-button{
+    margin-top: 25px;
+  }
+  .navbar-nav .presentation{
+    margin: 0 auto;
+    width: 100%!important;
+  }
+  .navbar-nav .presentation a{
+    border-bottom: 2px solid transparent;
+  }
+  .navbar-nav.alago-button{
+    width: 100%;
+  }
+  #alagou{
+    float: initial;
+  }
+  #phone{
+    margin: -45px auto!important;
+    display: block;
+  }
+
+  .navbar-default .navbar-toggle{
+  border-color: #afafaf;
+  background-color: #afafaf;
+  }
+  .navbar-default .navbar-toggle .icon-bar{
+    background-color: #ffffff;
+  }
+  .navbar-default .navbar-toggle:hover .icon-bar{
+    background: #afafaf;
+  }
+  .navbar-default .navbar-toggle.collapsed, .navbar-default .navbar-toggle.collapsed:focus{
+    background: #ffffff;
+  }
+  .navbar-default .navbar-toggle.collapsed:hover, .navbar-default .navbar-toggle:focus{
+    background: #afafaf;
+  }
+  .navbar-default .navbar-toggle:hover{
+    background-color: #ffffff;
+  }
+  .navbar-default .navbar-toggle.collapsed:hover .icon-bar{
+    background: #ffffff;
+  }
+  .navbar-default .navbar-toggle.collapsed .icon-bar{
+    background: #afafaf;
+  }
+
+  .materialContainer{
+    padding: 30px;
+    width: 95%!important;
+  }
+  .material-button.alt-2{
+    right: 3px;
+  }
+  .alt-2.active .shape{
+    right: 30px!important;
+  }
+  .material-button .shape{
+    right: 0;
+  }
+  .input.half label{
+    line-height: 28px!important;
+  }
+
+  .instructions{
+    text-align: center;
+    padding-left: 50px!important;
+    padding-right: 50px!important;
+  }
+  .how-it-works .instructions h1{
+    margin-top: 25px;
+  }
+  .how-it-works .app{
+    padding: 0;
+  }
 }
+
+/* Menu celular */
+
+.navbar-collapse{
+  background: #f7f7f7;
+}
+
+/* Fim do Menu Celular */
 
 /*Fim do Header*/
 
@@ -204,19 +300,23 @@ p:first-of-type {
   background-size: 100%;
   height: 330px;
   background-attachment: fixed;
+  background-size: cover;
 }
 .static-map input{
   border-radius: 10px;
   border: 1px solid transparent;
-  width: 450px;
+  width: 50%;
+  min-width: 310px;
+  max-width: 600px;
   margin: 0 auto;
   display: block;
   margin-top: 35px;
   padding: 0 15px;
   outline: none;
+
 }
 .static-map h3{
-  padding-top: 60px;
+  padding-top: 95px;
   margin: 0;
   text-align: center;
   color: #ffffff;
@@ -357,7 +457,7 @@ a.about-logo{
 a.about-logo img{
   display: block;
   margin: 0 auto!important;
-  padding: 15px!important;
+  padding: 8px!important;
 }
 /* Fim do About */
 
