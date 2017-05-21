@@ -81,20 +81,23 @@ p:first-of-type {
   height: 80vh;
   width: 100%;
 }
-#subtitle-map{
+#subtitle-map-mobile{
+  display: none;
+}
+#subtitle-map, #subtitle-map-mobile{
   padding: 10px 90px;
   height: 10vh;
 }
-#subtitle-map.row{
+#subtitle-map.row, #subtitle-map-mobile.row{
   margin: 0;
 }
-#subtitle-map img{
+#subtitle-map img, #subtitle-map-mobile img{
   height: 40px;
 }
-#subtitle-map div{
+#subtitle-map div, #subtitle-map-mobile img{
   text-align: center;
 }
-#subtitle-map div b{
+#subtitle-map div b, #subtitle-map-mobile div b{
   margin-left: 15px;
 }
  /*Fim do Mapa*/
@@ -214,15 +217,27 @@ p:first-of-type {
     height: 68vh;
   }
   #subtitle-map{
-    padding: 0 40px;
+    display: none;
+  }
+  #subtitle-map-mobile{
+    display: initial;
+  }
+  #subtitle-map-mobile{
+    padding: 5px 40px;
     height: 9vh;
     font-size: 13px;
+    display: block;
   }
-  #subtitle-map img{
+  #subtitle-map-mobile img{
     height: 25px;
+    display: block;
+    margin: 0 auto;
   }
-  #subtitle-map div{
-    text-align: initial;
+  #subtitle-map-mobile div{
+    text-align: center;
+  }
+  #subtitle-map-mobile div b{
+    margin-left: 5px;
   }
   div.static-map h3{
     padding-top: 65px;
