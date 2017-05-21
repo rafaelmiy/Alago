@@ -213,6 +213,9 @@ p:first-of-type {
 }
 
 @media only screen and (max-width: 768px){
+  html{
+    background: #ffffff;
+  }
   #map{
     height: 68vh;
   }
