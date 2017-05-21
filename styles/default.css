@@ -81,6 +81,22 @@ p:first-of-type {
   height: 80vh;
   width: 100%;
 }
+#subtitle-map{
+  padding: 10px 90px;
+  height: 10vh;
+}
+#subtitle-map.row{
+  margin: 0;
+}
+#subtitle-map img{
+  height: 40px;
+}
+#subtitle-map div{
+  text-align: center;
+}
+#subtitle-map div b{
+  margin-left: 15px;
+}
  /*Fim do Mapa*/
 
 /*Logo*/
@@ -196,6 +212,13 @@ p:first-of-type {
 @media only screen and (max-width: 768px){
   #map{
     height: 73vh;
+  }
+  #subtitle-map{
+    padding: 0 40px;
+    height: 20vh;
+  }
+  #subtitle-map div{
+    text-align: initial;
   }
   div.static-map h3{
     padding-top: 65px;
