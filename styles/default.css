@@ -211,11 +211,14 @@ p:first-of-type {
 
 @media only screen and (max-width: 768px){
   #map{
-    height: 73vh;
+    height: 68vh;
   }
   #subtitle-map{
     padding: 0 40px;
     height: 20vh;
+  }
+  #subtitle-map img{
+    height: 30px;
   }
   #subtitle-map div{
     text-align: initial;
