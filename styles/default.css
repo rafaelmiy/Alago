@@ -216,9 +216,10 @@ p:first-of-type {
   #subtitle-map{
     padding: 0 40px;
     height: 20vh;
+    font-size: 13px;
   }
   #subtitle-map img{
-    height: 30px;
+    height: 25px;
   }
   #subtitle-map div{
     text-align: initial;
