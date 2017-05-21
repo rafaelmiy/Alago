@@ -195,7 +195,7 @@ p:first-of-type {
 
 @media only screen and (max-width: 768px){
   #map{
-    height: 60vh;
+    height: 75vh;
   }
   div.static-map h3{
     padding-top: 65px;
