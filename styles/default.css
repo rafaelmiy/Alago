@@ -249,6 +249,10 @@ p:first-of-type {
     margin-left: 20px;
   }
 
+  .overbox{
+    height: 90%!important;
+  }
+
   .navbar-header{
     display: initial;
   }
