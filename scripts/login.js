@@ -81,6 +81,7 @@ $(function() {
 
    $(".material-button").click(function() {
 
+      $('[data-toggle="tooltip"]').tooltip('hide');
       if ($(this).hasClass('material-button')) {
          setTimeout(function() {
             $(".overbox").css({

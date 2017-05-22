@@ -9,6 +9,9 @@
 
     <link rel="icon" type="image/png" href="images/icon.png" />
 
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
     <!-- Scripts do Firebase -->
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <script>
@@ -42,7 +45,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- modified CSS -->
-    <link href="styles/login.css" rel="stylesheet">
     <link href="styles/default.css" rel="stylesheet">
   </head>
 
@@ -66,89 +68,81 @@
               <li class="presentation"><a class="link mapa" href="map.html">Mapa</a></li>
               <li class="presentation"><a class="link vai-chover" href="#">Vai chover?</a></li>
               <li class="presentation"><a class="link sobre" href="about.html">Sobre</a></li>
-              <li class="presentation"><a class="link login active" href="#">Login</a></li>
+              <li class="presentation"><a class="link login" href="login.html">Login</a></li>
               <!-- <li class="presentation" id="alagou"><a class="btn-alago" href="#">alagou!</a></li> -->
             </ul>
 
-            <!-- <ul class="nav navbar-nav alago-button">
+            <ul class="nav navbar-nav alago-button">
               <li class="presentation" id="alagou"><a class="btn-alago" href="#">alagou!</a></li>
-            </ul> -->
+            </ul>
 
           </div>
         </div>
       </nav>
     </div>
 
-    <div class="materialContainer login">
-      <div class="box">
-        <div class="title">LOGIN</div>
-        <div class="input">
-           <label for="name">E-mail</label>
-           <input type="text" name="name" id="name">
-           <span class="spin"></span>
-        </div>
-        <div class="input">
-           <label for="pass">Senha</label>
-           <input type="password" name="pass" id="pass">
-           <span class="spin"></span>
-        </div>
-        <div class="button login">
-           <button><span>Entrar</span> <i class="fa fa-check"></i></button>
-        </div>
-        <a href="" class="pass-forgot">Esqueceu a senha?</a>
+    <div class="static-map">
+      <h3>Descubra os pontos de alagamento próximos de você</h3>
+      <input type="text" class="searchBar" placeholder="Bairro, rua, endereço...">
+      <h4><b>Mais pesquisados:</b> <b class="italic">Higienópolis | Penha | Alphaville | Lapa</b></h4>
+    </div>
+
+    <div class="how-it-works row">
+      <div class="col-md-4">
+        <img id="phone" src="images/phone.png">
       </div>
-      <div class="overbox">
-        <div data-toggle="tooltip" data-placement="top" title="É novo?" data-original-title="Tooltip on top" class="material-button alt-2"><span class="shape"></span></div>
-        <div class="title">CADASTRAR</div>
-        <div class="input">
-           <label for="regname">E-mail</label>
-           <input type="text" name="regname" id="regname">
-           <span class="spin"></span>
+      <div class="col-md-8 instructions">
+        <h1>Como funciona</h1>
+        <div class="col-md-2"><img src="images/icon_pin.png"></div>
+        <div class="col-md-10">
+          <b class="icon_pin-text">MAPAS - ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
+          urna arcu. In eleifend nec sapien in blandit. Maecenas leo risus,
+          venenatis sit amet metus nec, vulputate efficitur urna.</b>
         </div>
-        <div class="input half">
-           <label for="regpass">Senha</label>
-           <input type="password" name="regpass" id="regpass">
-           <span class="spin"></span>
+        <div class="col-md-2"><img src="images/star.png"></div>
+        <div class="col-md-10">
+          <b class="icon_star-text">FAVORITOS - ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
+          urna arcu. In eleifend nec sapien in blandit. Maecenas leo risus,
+          venenatis sit amet metus nec, vulputate efficitur urna.</b>
         </div>
-        <div class="input half">
-           <label for="reregpass">Repita a Senha</label>
-           <input type="password" name="reregpass" id="reregpass">
-           <span class="spin"></span>
+        <div class="col-md-2"><img src="images/icon_alert.png"></div>
+        <div class="col-md-10">
+          <b class="icon_alert-text">ALERTAS - ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
+          urna arcu. In eleifend nec sapien in blandit. Maecenas leo risus,
+          venenatis sit amet metus nec, vulputate efficitur urna.</b>
         </div>
-        <div class="button">
-           <button><span>Entrar</span></button>
+      </div>
+      <div class="col-md-12 app">
+        <div class="col-md-5">
+          <img id="icon" src="images/icon.png">
+          <b>Baixe nosso app</b>
+          <br>
+          <a href="#"><img class="app_store" src="images/app_store.png"></a>
+          <!-- <a href="#"><img class="play_store" src="images/play_store.png"></a> -->
         </div>
       </div>
     </div>
+    
+    <div id="waves">
+      <script src="scripts/script_wave.js"></script>
+      <canvas id='wave' width='100%' height='200'></canvas>
+      <script src="scripts/script_wave_2.js"></script>
+      <canvas id='wave2' width='100%' height='200'></canvas>
+      <script src="scripts/script_wave_3.js"></script>
+      <canvas id='wave3' width='100%' height='200'></canvas>
+    </div>
+    <div class="blue-band"></div>
 
-    <!-- <div class="footer row">
+    <div class="footer row">
       <div class="col-md-6">
-        <img class="logo" src="images/logo_alago.png">
+        <img class="logo" src="images/logo_alago_white.png">
       </div>
       <div class="col-md-6"></div>
-    </div> -->
+    </div>
 
-    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyBSlSoszFtsCKSjjrwThh3uohVI2sc2wW8",
-        authDomain: "alago-18a8b.firebaseapp.com",
-        databaseURL: "https://alago-18a8b.firebaseio.com",
-        projectId: "alago-18a8b",
-        storageBucket: "alago-18a8b.appspot.com",
-        messagingSenderId: "587953181865"
-      };
-      firebase.initializeApp(config);
-    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="scripts/login.js"></script>
-    <!-- Inicializando tooltip -->
-    <script type="text/javascript">
-      $('[data-toggle="tooltip"]').tooltip('show');
-    </script>
   </body>
 </html>

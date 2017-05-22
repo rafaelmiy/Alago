@@ -333,6 +333,10 @@
    height: 100%;
 }
 
+.alt-2.active .shape{
+ right: -30px;
+}
+
 .material-button .shape:before,
 .alt-2 .shape:before,
 .material-button .shape:after,

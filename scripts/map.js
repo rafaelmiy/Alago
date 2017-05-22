@@ -12,10 +12,16 @@ function initMap() {
         lat: position.coords.latitude,
         lng: position.coords.longitude
       };
+      var lat = pos.lat;
+      var long = pos.lng;
+
+      sessionStorage.setItem('lat', lat);
+      sessionStorage.setItem('long', long);
 
       infoWindow.setPosition(pos);
       infoWindow.setContent('Você');
       map.setCenter(pos);
+
     }, function() {
       handleLocationError(true, infoWindow, map.getCenter());
     });
@@ -25,9 +31,4 @@ function initMap() {
   }
 }
 
-function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-  infoWindow.setPosition(pos);
-  infoWindow.setContent(browserHasGeolocation ?
-                        'Erro: A Geolocalização falhou.' :
-                        'Erro: Seu navegador não suporta Geolocaliazação.');
-}
+
