@@ -43,6 +43,13 @@ function initMap() {
     }
   };
   
+  function addMarker(feature) {
+    var marker = new google.maps.Marker({
+      position: feature.position,
+      icon: icons[feature.type].icon,
+      map: map
+    });
+  }
   
   var features = [
     {
