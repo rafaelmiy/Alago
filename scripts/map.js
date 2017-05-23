@@ -73,10 +73,10 @@ function autoUpdate() {
 autoUpdate();
   var features = [
     {
-      position: new google.maps.LatLng(-23.598566599999998, -46.6560601),
+      position: new google.maps.LatLng(-23.598566599999998, -46.6660601),
       type: 'info'
     }, {
-      position: new google.maps.LatLng(-23.598566599999998, -46.6550601),
+      position: new google.maps.LatLng(-23.598566599999998, -46.6655601),
       type: 'info'
     }, {
       position: new google.maps.LatLng(-23.598566599999998, -46.6540601),
