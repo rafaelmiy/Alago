@@ -1,3 +1,6 @@
+$( document ).ready(function() {
+    window.scrollTo(0,1);
+});
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -22,7 +25,7 @@ function initMap() {
       infoWindow.setPosition(pos);
       infoWindow.setContent('Você');
       map.setCenter(pos);
-      window.scrollTo(0,1);
+      
       addWeather();
 
     }, function() {
