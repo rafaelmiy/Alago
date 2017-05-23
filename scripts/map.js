@@ -63,11 +63,11 @@ function autoUpdate() {
     }
 
     // Center the map on the new position
-    map.setCenter(newPoint);
+    //map.setCenter(newPoint);
   }); 
 
   // Call the autoUpdate() function every 5 seconds
-  setTimeout(autoUpdate, 500);
+  setTimeout(autoUpdate, 5000);
 }
 
 autoUpdate();
