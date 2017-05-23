@@ -3,7 +3,7 @@ function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 16,
     center: new google.maps.LatLng(-23.5437803, -46.6491332),
-    mapTypeId: 'roadmap'
+    mapTypeId: 'terrain'
   });
  var infoWindow = new google.maps.InfoWindow({map: map});
 if (navigator.geolocation) {
