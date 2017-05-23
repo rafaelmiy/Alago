@@ -46,6 +46,7 @@
     <![endif]-->
     <!-- modified CSS -->
     <link href="styles/default.css" rel="stylesheet">
+    <link href="styles/weather.css" rel="stylesheet">
   </head>
 
   <body>
@@ -66,7 +67,7 @@
             <ul class="nav navbar-nav alago-links">
               <li class="logo"><a href="index.html"><img id="logo" href="/" src="images/logo_alago.png"></a></li>
               <li class="presentation"><a class="link mapa" href="map.html">Mapa</a></li>
-              <li class="presentation"><a class="link vai-chover" href="#">Vai chover?</a></li>
+              <li class="presentation"><a class="link vai-chover active" href="weather.html">Vai chover?</a></li>
               <li class="presentation"><a class="link sobre" href="about.html">Sobre</a></li>
               <li class="presentation"><a class="link login" href="login.html">Login</a></li>
               <!-- <li class="presentation" id="alagou"><a class="btn-alago" href="#">alagou!</a></li> -->
@@ -80,60 +81,46 @@
         </div>
       </nav>
     </div>
-
-    <div class="static-map">
-      <h3>Descubra os pontos de alagamento próximos de você</h3>
-      <input type="text" class="searchBar" placeholder="Bairro, rua, endereço...">
-      <h4><b>Mais pesquisados:</b> <b class="italic">Higienópolis | Penha | Alphaville | Lapa</b></h4>
-    </div>
-
-    <div class="how-it-works row">
-      <div class="col-md-4">
-        <img id="phone" src="images/phone.png">
-      </div>
-      <div class="col-md-8 instructions">
-        <h1>Como funciona</h1>
-        <div class="col-md-2"><img src="images/icon_pin.png"></div>
-        <div class="col-md-10">
-          <b class="icon_pin-text">MAPAS - ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
-          urna arcu. In eleifend nec sapien in blandit. Maecenas leo risus,
-          venenatis sit amet metus nec, vulputate efficitur urna.</b>
+    <div class="background-weather">
+      <div id="weather-window">
+        <div class="search">
+          <input placeholder="Digite um local">
         </div>
-        <div class="col-md-2"><img src="images/star.png"></div>
-        <div class="col-md-10">
-          <b class="icon_star-text">FAVORITOS - ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
-          urna arcu. In eleifend nec sapien in blandit. Maecenas leo risus,
-          venenatis sit amet metus nec, vulputate efficitur urna.</b>
-        </div>
-        <div class="col-md-2"><img src="images/icon_alert.png"></div>
-        <div class="col-md-10">
-          <b class="icon_alert-text">ALERTAS - ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
-          urna arcu. In eleifend nec sapien in blandit. Maecenas leo risus,
-          venenatis sit amet metus nec, vulputate efficitur urna.</b>
-        </div>
-      </div>
-      <div class="col-md-12 app">
-        <div class="col-md-5">
-          <img id="icon" src="images/icon.png">
-          <b>Baixe nosso app</b>
-          <br>
-          <a href="#"><img class="app_store" src="images/app_store.png"></a>
-          <!-- <a href="#"><img class="play_store" src="images/play_store.png"></a> -->
+        <div class="forecast row">
+          <div class="col-md-12">
+            <img src=""><h3 id="weather-location">--</h3>
+          </div>
+          <div class="icon col-md-1 col-xs-2"><img id="weather-icon" src=""></div>
+          <div class="temp col-md-6">
+            <h1><span id="weather-temp">--</span>°C</h1>
+          </div>
+          <div class="realfeel col-md-4">
+            <h3>Temp. real:</h3>
+            <h2><span id="weather-realfeel">--</span>°C</h2>
+          </div>
+          <div class="infos col-md-12">
+            <div class="rain-prob col-md-7">
+              <h2>Chuva hoje: <span id="weather-precip"></span>mm</h2>
+            </div>
+            <div class="extra col-md-5">
+              <div class="humidity col-md-12"><b>Umidade: <b id="weather-humidity">--</b></b></div>
+              <div class="wind col-md-12"><b>Vento: <b id="weather-wind">--</b>Km/h</b></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     
-    <div id="waves">
-      <script src="scripts/script_wave.js"></script>
-      <canvas id='wave' width='100%' height='200'></canvas>
-      <script src="scripts/script_wave_2.js"></script>
-      <canvas id='wave2' width='100%' height='200'></canvas>
-      <script src="scripts/script_wave_3.js"></script>
-      <canvas id='wave3' width='100%' height='200'></canvas>
-    </div>
-    <div class="blue-band"></div>
 
-    <div class="footer row">
+    <!-- Mapa -->
+    <div id="map" style="display:none"></div>
+    <script src="scripts/map.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ2acXgmsIhkEqoD1o3_ZU4rtdNP1M66I&callback=initMap">
+    </script>
+    <!-- Fim do Mapa -->
+
+    <div class="footer navbar-fixed-bottom row">
       <div class="col-md-6">
         <img class="logo" src="images/logo_alago_white.png">
       </div>
@@ -144,5 +131,6 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts/weather.js"></script>
   </body>
 </html>
