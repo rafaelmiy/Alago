@@ -30,7 +30,7 @@ function initMap() {
     handleLocationError(false, infoWindow, map.getCenter());
   }
   
-  var iconBase = 'images/pins/';
+  var iconBase = '../images/pins/';
   var icons = {
     blocked: {
       icon: iconBase + 'red_pin.png'
