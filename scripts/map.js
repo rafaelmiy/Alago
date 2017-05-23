@@ -32,13 +32,13 @@ if (navigator.geolocation) {
   var iconBase = 'https://rafaelmiy.github.io/Alago/images/pins/';
   var icons = {
     blocked: {
-      icon: iconBase + 'red_pin.png'
+      icon: 'https://rafaelmiy.github.io/Alago/images/pins/red_pin.png'
     },
     ok: {
-      icon: iconBase + 'blue_pin.png'
+      icon: 'https://rafaelmiy.github.io/Alago/images/pins/blue_pin.png'
     },
     old: {
-      icon: iconBase + 'grey_pin.png'
+      icon: 'https://rafaelmiy.github.io/Alago/images/pins/grey_pin.png'
     }
   };
 
