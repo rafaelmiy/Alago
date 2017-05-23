@@ -22,6 +22,8 @@ function initMap() {
       infoWindow.setPosition(pos);
       infoWindow.setContent('Você');
       map.setCenter(pos);
+      
+      addWeather();
 
     }, function() {
       handleLocationError(true, infoWindow, map.getCenter());
@@ -32,35 +34,37 @@ function initMap() {
   }
 }
 
+function addWeather(){
+  // Setting geolocation at sessionStorage
+  var lat = sessionStorage.getItem('lat');
+  var long = sessionStorage.getItem('long');
 
-// Setting geolocation at sessionStorage
-var lat = sessionStorage.getItem('lat');
-var long = sessionStorage.getItem('long');
+  var Weather = "https://miyamotonode.mybluemix.net/weather/wu2/"+lat+"/"+long+"";
 
-var Weather = "https://miyamotonode.mybluemix.net/weather/wu2/"+lat+"/"+long+"";
+  $.ajax({
+    url : Weather,
+    dataType : "jsonp",
+    success : function(data) {
+      // Get all informations
+      var data = data.current_observation;
 
-$.ajax({
-  url : Weather,
-  dataType : "jsonp",
-  success : function(data) {
-    // Get all informations
-    var data = data.current_observation;
+      var location = data.display_location.full;
+      var iconURL = data.icon_url;
+      var temp = data.temp_c;
+      var humidity = data.relative_humidity;
+      var wind = data.wind_kph;
+      var realfeel = data.feelslike_c;
+      var precip = data.precip_today_metric;
 
-    var location = data.display_location.full;
-    var iconURL = data.icon_url;
-    var temp = data.temp_c;
-    var humidity = data.relative_humidity;
-    var wind = data.wind_kph;
-    var realfeel = data.feelslike_c;
-    var precip = data.precip_today_metric;
-    
-    // Set all informations
-    $("#weather-location").html(location);
-    $("#weather-icon").attr("src",iconURL);
-    $("#weather-temp").html(temp);
-    $("#weather-humidity").html(humidity);
-    $("#weather-wind").html(wind);
-    $("#weather-realfeel").html(realfeel);
-    $("#weather-precip").html(precip);
-  }
-});
+      // Set all informations
+      $("#weather-location").html(location);
+      $("#weather-icon").attr("src",iconURL);
+      $("#weather-temp").html(temp);
+      $("#weather-humidity").html(humidity);
+      $("#weather-wind").html(wind);
+      $("#weather-realfeel").html(realfeel);
+      $("#weather-precip").html(precip);
+    }
+  });
+}
+
