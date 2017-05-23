@@ -67,7 +67,7 @@ function autoUpdate() {
   }); 
 
   // Call the autoUpdate() function every 5 seconds
-  setTimeout(autoUpdate, 200);
+  setTimeout(autoUpdate, 500);
 }
 
 autoUpdate();
