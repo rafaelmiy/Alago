@@ -1,4 +1,4 @@
-window.scrollTo(0,1);
+
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: -23.5437803, lng: -46.6491332},
@@ -22,7 +22,7 @@ function initMap() {
       infoWindow.setPosition(pos);
       infoWindow.setContent('Você');
       map.setCenter(pos);
-      
+      window.scrollTo(0,1);
       addWeather();
 
     }, function() {
