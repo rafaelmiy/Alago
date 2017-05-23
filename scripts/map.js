@@ -31,14 +31,14 @@ if (navigator.geolocation) {
   }
   var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
   var icons = {
-    parking: {
+    blocked: {
+      icon: 'https://rafaelmiy.github.io/Alago/images/pins/red_pin.png'
+    },
+    ok: {
       icon: 'https://rafaelmiy.github.io/Alago/images/pins/blue_pin.png'
     },
-    library: {
-      icon: 'library_maps.png'
-    },
-    info: {
-      icon: 'https://rafaelmiy.github.io/Alago/images/pins/blue_pin.png'
+    old: {
+      icon: 'https://rafaelmiy.github.io/Alago/images/pins/grey_pin.png'
     }
   };
 
@@ -74,13 +74,13 @@ autoUpdate();
   var features = [
     {
       position: new google.maps.LatLng(-23.598566599999998, -46.6660601),
-      type: 'info'
+      type: 'ok'
     }, {
-      position: new google.maps.LatLng(-23.598566599999998, -46.6655601),
-      type: 'info'
+      position: new google.maps.LatLng(-23.598566599999998, -46.6675601),
+      type: 'blocked'
     }, {
       position: new google.maps.LatLng(-23.598566599999998, -46.6640601),
-      type: 'ok'
+      type: 'old'
     }, {
       position: new google.maps.LatLng(-23.598566599999998, -46.6730601),
       type: 'old'
