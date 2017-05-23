@@ -25,6 +25,15 @@
 	padding: 0 30px 15px;
 	color: #000000;
 }
+#weather-window .forecast .location{
+	padding-left: 0;
+}
+#weather-window .forecast .location img{
+	float: left;
+    height: 20px;
+    margin-top: 2px;
+    margin-right: 5px;
+}
 #weather-window .forecast .icon{
 	margin-right: 15px;
 	margin-top: 25px;
@@ -37,6 +46,7 @@
 }
 #weather-window .forecast .infos .rain-prob h2{
 	width: 100%;
+	color: #0063d8;
 }
 #weather-window .forecast .realfeel{
 	text-align: center;
