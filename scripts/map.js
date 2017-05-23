@@ -79,10 +79,10 @@ autoUpdate();
       position: new google.maps.LatLng(-23.598566599999998, -46.6655601),
       type: 'info'
     }, {
-      position: new google.maps.LatLng(-23.598566599999998, -46.6540601),
+      position: new google.maps.LatLng(-23.598566599999998, -46.6640601),
       type: 'ok'
     }, {
-      position: new google.maps.LatLng(-23.598566599999998, -46.6530601),
+      position: new google.maps.LatLng(-23.598566599999998, -46.6730601),
       type: 'old'
     }
   ];
