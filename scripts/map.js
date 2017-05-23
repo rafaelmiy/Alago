@@ -18,8 +18,8 @@ if (navigator.geolocation) {
       sessionStorage.setItem('lat', lat);
       sessionStorage.setItem('long', long);
 
-      infoWindow.setPosition(pos);
-      infoWindow.setContent('Você');
+      //infoWindow.setPosition(pos);
+      //infoWindow.setContent('Você');
       map.setCenter(pos);
 
     }, function() {
@@ -58,7 +58,7 @@ function autoUpdate() {
       marker = new google.maps.Marker({
         position: newPoint,
         map: map,
-        icon: 'https://rafaelmiy.github.io/Alago/images/pins/blue_pin.png'
+        icon: 'https://rafaelmiy.github.io/Alago/images/pins/gps_pin.png'
       });
     }
 
