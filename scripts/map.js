@@ -29,6 +29,34 @@ function initMap() {
     // Browser doesn't support Geolocation
     handleLocationError(false, infoWindow, map.getCenter());
   }
+  
+  var iconBase = 'images/pins/';
+  var icons = {
+    blocked: {
+      icon: iconBase + 'red_pin.png'
+    },
+    ok: {
+      icon: iconBase + 'blue_pin.png'
+    },
+    old: {
+      icon: iconBase + 'grey_pin.png'
+    }
+  };
+  
+  
+  var features = [
+    {
+      position: new google.maps.LatLng(-23.598566599999998, -46.6560601),
+      type: 'block'
+    }, {
+      position: new google.maps.LatLng(-23.598566599999998, -47.6560601),
+      type: 'ok'
+    }, {
+      position: new google.maps.LatLng(-23.598566599999998, -48.6560601),
+      type: 'old'
+    }
+  ];
+  
 }
 
 
