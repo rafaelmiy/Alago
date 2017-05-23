@@ -29,16 +29,16 @@ if (navigator.geolocation) {
     // Browser doesn't support Geolocation
     handleLocationError(false, infoWindow, map.getCenter());
   }
-  var iconBase = 'https://rafaelmiy.github.io/Alago/images/pins/';
+  var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
   var icons = {
-    blocked: {
-      icon: 'https://rafaelmiy.github.io/Alago/images/pins/red_pin.png'
-    },
-    ok: {
+    parking: {
       icon: 'https://rafaelmiy.github.io/Alago/images/pins/blue_pin.png'
     },
-    old: {
-      icon: 'https://rafaelmiy.github.io/Alago/images/pins/grey_pin.png'
+    library: {
+      icon: 'library_maps.png'
+    },
+    info: {
+      icon: 'https://rafaelmiy.github.io/Alago/images/pins/blue_pin.png'
     }
   };
 
@@ -74,10 +74,10 @@ autoUpdate();
   var features = [
     {
       position: new google.maps.LatLng(-23.598566599999998, -46.6560601),
-      type: 'block'
+      type: 'info'
     }, {
       position: new google.maps.LatLng(-23.598566599999998, -46.6550601),
-      type: 'block'
+      type: 'info'
     }, {
       position: new google.maps.LatLng(-23.598566599999998, -46.6540601),
       type: 'ok'
