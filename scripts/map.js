@@ -57,13 +57,6 @@ function initMap() {
     }
   ];
   
-  var iconBase = '../images/pins/';
-  var marker = new google.maps.Marker({
-    position: pos,
-    map: map,
-    icon: iconBase + 'blue_pin.png'
-  });
-  
 }
 
 
