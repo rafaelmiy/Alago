@@ -4,6 +4,7 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
     padding: 80px 0 10%;
+	min-height: 470px;
 }
 #weather-window{
     width: 40%;
