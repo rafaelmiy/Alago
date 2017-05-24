@@ -5,7 +5,7 @@ function initMap() {
     center: new google.maps.LatLng(-23.5437803, -46.6491332),
     mapTypeId: 'terrain'
   });
- var infoWindow = new google.maps.InfoWindow({map: map});
+ //var infoWindow = new google.maps.InfoWindow({map: map});
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       var pos = {
