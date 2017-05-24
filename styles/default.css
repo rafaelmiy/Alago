@@ -24,6 +24,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body > . container{
+	padding-top: 60px;
+}
+
 #placeholder {
   width: 500px;
   height: 280px;
