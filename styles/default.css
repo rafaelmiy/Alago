@@ -506,6 +506,9 @@ p:first-of-type {
 .footer{
   padding: 20px 90px;
   background: #02546c;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
 }
 .footer.row{
   margin-left: 0;
