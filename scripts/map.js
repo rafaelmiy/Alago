@@ -42,6 +42,8 @@ if (navigator.geolocation) {
     }
   };
 
+var geoloccontrol = new klokantech.GeolocationControl(map, mapMaxZoom);
+  
 var marker = null;
 
 function autoUpdate() {
