@@ -118,8 +118,20 @@ p:first-of-type {
 /*Fim do Logo*/
 
 /*Header*/
-
-.header{
+#user{
+  width: 100%;
+  margin-top: 6px;
+}
+#user:hover{
+  border-bottom: 0;
+}
+#user img{
+  height: 40px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+#user b{
+  font-weight: 500;
 }
 #navbar{
   border: none!important;
