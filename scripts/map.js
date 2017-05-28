@@ -73,28 +73,28 @@ function autoUpdate() {
 }
 
 autoUpdate();
-  var features = [
-    {
-      position: new google.maps.LatLng(-23.598566599999998, -46.6660601),
-      type: 'ok'
-    }, {
-      position: new google.maps.LatLng(-23.598566599999998, -46.6675601),
-      type: 'blocked'
-    }, {
-      position: new google.maps.LatLng(-23.598566599999998, -46.6640601),
-      type: 'old'
-    }, {
-      position: new google.maps.LatLng(-23.598566599999998, -46.6730601),
-      type: 'old'
-    }
-  ];
 
-  // Create markers.
-  features.forEach(function(feature) {
-    var marker = new google.maps.Marker({
-      position: feature.position,
-      icon: icons[feature.type].icon,
-      map: map
+  var features = [];
+
+  firebase.database().ref("pontos").on("value", function(snapshot) {
+    snapshot.forEach(function(data) {
+      var now = new Date().getTime();
+      var ponto = data.val();
+      features.push(
+        {
+          position: new google.maps.LatLng(ponto.lat, ponto.lon),
+          type: ((now-ponto.time)/(1000*60))<180?ponto.type:"old"
+        },
+      );
+    });
+
+    // Create markers.
+    features.forEach(function(feature) {
+      var marker = new google.maps.Marker({
+        position: feature.position,
+        icon: icons[feature.type].icon,
+        map: map
+      });
     });
   });
 }

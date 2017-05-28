@@ -11,20 +11,66 @@
 
     <!-- Scripts do Firebase -->
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script src="scripts/firebase_config.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyBSlSoszFtsCKSjjrwThh3uohVI2sc2wW8",
-        authDomain: "alago-18a8b.firebaseapp.com",
-        databaseURL: "https://alago-18a8b.firebaseio.com",
-        projectId: "alago-18a8b",
-        storageBucket: "alago-18a8b.appspot.com",
-        messagingSenderId: "587953181865"
-      };
-      firebase.initializeApp(config);
+      $(document).ready(function(){
+
+        $("div#login").click(function(){
+          var name = $("#name").val();
+          var pass = $("#pass").val();
+          
+          firebase.auth().signInWithEmailAndPassword(name, pass)
+            .then(function(user){
+              alert("Usuario logado com sucesso");
+          }).catch(function(error){
+            var errorCode = error.code;
+              var errorMessage = error.message;
+              alert(errorMessage);
+              console.log(error);
+          });
+        });
+
+        $("div#register").click(function(){
+          var regname =  $("#regname").val();
+          var regpass = $("#regpass").val();
+          var reregpass = $("#reregpass").val();
+
+          if(regname == ''){
+            alert("Preencha o email");
+            return;
+          }
+          if(regpass==''){
+            alert("Preencha a senha");
+            return;
+          }
+          if(regpass!=reregpass){
+            alert("As senhas nao conferem");
+            return;
+          }
+
+          console.log("Efetuando cadastro do usuario");
+          firebase.auth().createUserWithEmailAndPassword(regname, regpass)
+            .then(function(user){
+              var user = firebase.auth().currentUser;
+              console.log("Usuario criado com sucesso", user);
+              alert("Usuario cadastrado com sucesso");
+            })
+            .catch(function(error){
+              var errorCode = error.code;
+              var errorMessage = error.message;
+              if (errorCode == 'auth/weak-password') {
+                alert('The password is too weak.');
+              } else {
+                alert(errorMessage);
+              }
+              console.log(error);
+            })
+        });
+      });
     </script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -92,7 +138,7 @@
            <input type="password" name="pass" id="pass">
            <span class="spin"></span>
         </div>
-        <div class="button login">
+        <div id="login" class="button login">
            <button><span>Entrar</span> <i class="fa fa-check"></i></button>
         </div>
         <a href="" class="pass-forgot">Esqueceu a senha?</a>
@@ -115,7 +161,7 @@
            <input type="password" name="reregpass" id="reregpass">
            <span class="spin"></span>
         </div>
-        <div class="button">
+        <div id="register" class="button">
            <button><span>Entrar</span></button>
         </div>
       </div>
