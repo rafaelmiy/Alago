@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Alago</title>
+
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon_72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon_114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon_144x144.png" />
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Scripts do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBSlSoszFtsCKSjjrwThh3uohVI2sc2wW8",
+        authDomain: "alago-18a8b.firebaseapp.com",
+        databaseURL: "https://alago-18a8b.firebaseio.com",
+        projectId: "alago-18a8b",
+        storageBucket: "alago-18a8b.appspot.com",
+        messagingSenderId: "587953181865"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- modified CSS -->
+    <link href="styles/default.css" rel="stylesheet">
+    <link href="styles/profile.css" rel="stylesheet">
+    <script src="scripts/jscolor.js"></script>
+  </head>
+
+  <body>
+
+    <div class="header grey">
+      <nav class="navbar navbar-default navbar-static-top grey">
+        <div class="grey">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html"><img id="logo-mobile-menu" src="images/logo_alago.png"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav alago-links">
+              <li class="logo"><a href="index.html"><img id="logo" href="/" src="images/logo_alago.png"></a></li>
+              <li class="presentation"><a class="link mapa" href="map.html">Mapa</a></li>
+              <li class="presentation"><a class="link vai-chover" href="weather.html">Vai chover?</a></li>
+              <li class="presentation"><a class="link sobre" href="about.html">Sobre</a></li>
+              <li class="presentation"><a class="link login" href="login.html">Login</a></li>
+              <!-- <li class="presentation"><a class="link login loged" id="user" href="login.html"><img src="images/users/pati.jpg"><b>Pati Peti</b>&nbsp;&nbsp;<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li> -->
+              <!-- <li class="presentation" id="alagou"><a class="btn-alago" href="#">alagou!</a></li> -->
+            </ul>
+
+            <ul class="nav navbar-nav alago-button">
+              <li class="presentation" id="alagou"><a class="btn-alago" href="#">alagou!</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div id="profile" class="container">
+      <div class="col-md-2"></div>
+      <div class="col-md-10 title">
+        <h1>Meus Dados</h1>
+      </div>
+      <div class="col-md-2 image">
+        <img src="images/users/pati.jpg">
+      </div>
+      <div class="col-md-10 infos">
+        <label>Nome</label>
+        <input id="name" type="text" value="Pati Peti" disabled="disabled">
+        <label>E-mail</label>
+        <input id="email" type="email" value="patipeti@alaguei.com" disabled="disabled">
+        <a href="#" class="button"><i class="fa fa-facebook" aria-hidden="true"></i>Desvincular Facebook</a>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-10 favorites">
+        <h1>Favoritos</h1>
+        <b>Casa da Joana</b>
+        <b>Casa do João</b>
+        <b>Escola do João</b>
+        <b>+</b>
+        <input type="text" placeholder="Nome do local">
+        <input type="text" placeholder="Endereço">
+        <span>Cor</span>
+        <button id="color-favorite" class="jscolor {valueElement:null,value:'66ccff'}" style="width:40px; height:40px;"></button>
+        <script>
+        function setTextColor(picker) {
+          document.getElementsByTagName('body')[0].style.color = '#' + picker.toString()
+        }
+        </script>
+        <br>
+        <a href="#" class="save">Salvar</a>
+        <a href="#" class="delete">Excluir</a>
+      </div>
+    </div>
+
+    <div class="footer row">
+      <div class="col-md-6">
+        <img class="logo" src="images/logo_alago_white.png">
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

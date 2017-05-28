@@ -1,0 +1,111 @@
+#profile .title h1, #profile .favorites h1{
+   color: #000000;
+   font-weight: 500;
+}
+#profile{
+   padding-top: 50px;
+}
+#profile .image img{
+   height: 130px;
+   border-radius: 130px;
+}
+#profile .infos{
+   padding-bottom: 40px
+}
+#profile .infos label{
+   margin-bottom: 0;
+   color: #000000;
+   font-weight: 100;
+   font-size: 14px;
+}
+#profile .infos input{
+   display: block;
+   font-size: 22px;
+   border: 0;
+   border-bottom: 1px solid black;
+   color: #000000;
+   font-weight: 300;
+   margin-bottom: 10px;
+}
+#profile .infos input#email{
+   margin-bottom: 40px;
+}
+#profile .infos a.button{
+   padding: 10px 30px;
+   border: 2px solid transparent;
+   border-radius: 10px;
+   background: #3b5998;
+   font-size: 21px;
+   color: #ffffff;
+}
+#profile .infos a.button:hover{
+   text-decoration: none;
+   border: 2px solid #3b5998;
+   background: transparent;
+   color: #3b5998;
+}
+#profile .infos a.button:hover i{
+   color: #3b5998;
+}
+#profile .infos a.button i{
+   margin-right: 20px;
+}
+#profile .favorites{
+   padding-bottom: 40px;
+}
+#profile .favorites h1{
+   color: #000000;
+   font-weight: 
+}
+#profile .favorites b{
+   padding: 5px 15px;
+   font-size: 20px;
+   border-radius: 10px;
+   font-weight: 500;
+   margin-right: 10px;
+   color: #ffffff;
+   background-color: blue;
+}
+#profile .favorites input{
+   display: block;
+   width: 40%;
+   border: 0;
+   border-bottom: 1px solid #000000;
+   outline: none;
+}
+#profile .favorites span{
+   font-size: 20px;
+   color: #000000;
+}
+#profile .favorites .save, #profile .favorites .delete{
+   padding: 10px 30px;
+   border: 2px solid transparent;
+   border-radius: 10px;
+   background: #1c61a7;
+   font-size: 21px;
+   color: #ffffff;
+   font-weight: 600;
+   margin-top: 20px;
+   margin-right: 20px;
+}
+#profile .favorites .save:hover, #profile .favorites .delete:hover{
+   border: 2px solid #1c61a7;
+   background: transparent;
+   color: #1c61a7;
+   text-decoration: none;
+}
+#profile .favorites .delete{
+   background: #df2a00;
+}
+#profile .favorites .delete:hover{
+   border: 2px solid #df2a00;
+   color: #df2a00;
+}
+#profile .jscolor{
+   outline: none;
+   border-radius: 10px;
+   border: 1px solid black;
+}
+#color-favorite{
+   margin-bottom: 40px;
+}
