@@ -49,6 +49,7 @@
     <![endif]-->
     <!-- modified CSS -->
     <link href="styles/default.css" rel="stylesheet">
+    <link href="styles/map.css" rel="stylesheet">
   </head>
 
   <body>
@@ -86,7 +87,67 @@
     </div>
     
     <!-- Mapa -->
-    <div id="map"></div>
+    <div id="favorites" class="container">
+      <div class="row">
+        <div class="col-md-2 col-lg-3 favorite-box">
+          <div class="favorite">
+            <div class="col-md-8 col-xs-8 texts">
+              <h4 class="title">Escola da Pati</h4>
+              <h4 class="address">Rua da Princesa 111</h4>
+            </div>
+            <div class="col-md-4 col-xs-4 map-image">
+              <img src="https://maps.googleapis.com/maps/api/staticmap?center=sao_paulo&size=90x70&zoom=15&style=element:labels|visibility:off&style=element:geometry.stroke|visibility:off&style=feature:landscape|element:geometry|saturation:-100&style=feature:water|saturation:-100|invert_lightness:true&key=AIzaSyCR2YRhZnjr0mDct_eYCHeW40p0sMt_ZDs">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-3 favorite-box">
+          <div class="favorite">
+            <div class="col-md-8 col-xs-8 texts">
+              <h4 class="title">Escola da Pati</h4>
+              <h4 class="address">Rua da Princesa 111</h4>
+            </div>
+            <div class="col-md-4 col-xs-4 map-image">
+              <img src="https://maps.googleapis.com/maps/api/staticmap?center=jabaquara&size=90x70&zoom=15&style=element:labels|visibility:off&style=element:geometry.stroke|visibility:off&style=feature:landscape|element:geometry|saturation:-100&style=feature:water|saturation:-100|invert_lightness:true&key=AIzaSyCR2YRhZnjr0mDct_eYCHeW40p0sMt_ZDs">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-3 favorite-box">
+          <div class="favorite">
+            <div class="col-md-8 col-xs-8 texts">
+              <h4 class="title">Escola da Pati</h4>
+              <h4 class="address">Rua da Princesa 111</h4>
+            </div>
+            <div class="col-md-4 col-xs-4 map-image">
+              <img src="https://maps.googleapis.com/maps/api/staticmap?center=higienopolis&size=90x70&zoom=15&style=element:labels|visibility:off&style=element:geometry.stroke|visibility:off&style=feature:landscape|element:geometry|saturation:-100&style=feature:water|saturation:-100|invert_lightness:true&key=AIzaSyCR2YRhZnjr0mDct_eYCHeW40p0sMt_ZDs">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-3 favorite-box">
+          <div class="favorite">
+            <div class="col-md-8 col-xs-8 texts">
+              <h4 class="title">Escola da Pati</h4>
+              <h4 class="address">Rua da Princesa 111</h4>
+            </div>
+            <div class="col-md-4 col-xs-4 map-image">
+              <img src="https://maps.googleapis.com/maps/api/staticmap?center=jundiai&size=90x70&zoom=15&style=element:labels|visibility:off&style=element:geometry.stroke|visibility:off&style=feature:landscape|element:geometry|saturation:-100&style=feature:water|saturation:-100|invert_lightness:true&key=AIzaSyCR2YRhZnjr0mDct_eYCHeW40p0sMt_ZDs">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-3 favorite-box">
+          <div class="favorite">
+            <div class="col-md-8 col-xs-8 texts">
+              <h4 class="title">Escola da Pati</h4>
+              <h4 class="address">Rua da Princesa 111</h4>
+            </div>
+            <div class="col-md-4 col-xs-4 map-image">
+              <img src="https://maps.googleapis.com/maps/api/staticmap?center=rio_claro&size=90x70&zoom=15&style=element:labels|visibility:off&style=element:geometry.stroke|visibility:off&style=feature:landscape|element:geometry|saturation:-100&style=feature:water|saturation:-100|invert_lightness:true&key=AIzaSyCR2YRhZnjr0mDct_eYCHeW40p0sMt_ZDs">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="map" class="loged"></div>
     <script src="scripts/map.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ2acXgmsIhkEqoD1o3_ZU4rtdNP1M66I&callback=initMap">
@@ -94,34 +155,68 @@
     <!-- Fim do Mapa -->
 
     <div id="subtitle-map" class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 red">
         <img src="images/sub_block.png">
         <b>Alagamento forte (bloqueada)</b>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 blue">
         <img src="images/sub_trans.png">
         <b>Alagamento leve (transitável)</b>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 grey">
         <img src="images/sub_old.png">
         <b>Alamentos passados</b>
       </div>
     </div>
 
     <div id="subtitle-map-mobile" class="row">
-      <div class="col-xs-4">
+      <div class="col-xs-4 red">
         <img src="images/sub_block.png">
         <b>Bloqueado</b>
       </div>
-      <div class="col-xs-4">
+      <div class="col-xs-4 blue">
         <img src="images/sub_trans.png">
         <b>Transitável</b>
       </div>
-      <div class="col-xs-4">
+      <div class="col-xs-4 grey">
         <img src="images/sub_old.png">
         <b>Passado</b>
       </div>
     </div>
+
+    <!-- Modal -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="alagoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+            <img src="images/users/pati.jpg">
+            <span class="modal-title">Pati Peti</span>
+          </div>
+          <div class="modal-body">
+            <h1>Alagou!</h1>
+            <h4>Compartilhe o que está acontecendo.</h4>
+            <input placeholder="Endereço">
+            <img src="images/sub_block.png">
+            <div class="radio-group">
+              <input type="radio" id="option-one" name="situation"><label for="option-one">Bloqueado</label><input type="radio" id="option-two" name="situation"><label for="option-two">Transitável</label>
+            </div>
+          </div>
+          <img src="images/sub_trans.png">
+          <div class="modal-footer">
+            <button type="button" class="btn">enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim do modal -->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->

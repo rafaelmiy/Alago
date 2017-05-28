@@ -1,0 +1,186 @@
+/*Mapa*/
+
+#favorites{
+	width: 100%;
+	height: 13vh;
+	margin: 0;
+}
+#favorites  > .row {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+#favorites  > .row > .col-md-2 {
+  display: inline-block;
+  float: none;
+}
+#favorites .favorite-box{
+	border-right: 1px solid rgba(0, 0, 0, 0.30);
+}
+#favorites .favorite{
+	padding-top: 5px;
+}
+#favorites .favorite img{
+	height: 70px;
+	border-radius: 8px;
+}
+#favorites .favorite .texts{
+	border-left: 4px solid blue;
+}
+#favorites .favorite .texts h4{
+	color: #000000;
+	display: block;
+}
+#favorites .favorite .texts h4.title{
+	font-size: 19px;
+	margin-bottom: 0;
+	font-weight: 600;
+}
+#favorites .favorite .texts h4.address{
+	font-weight: 100;
+	margin-top: 5px;
+}
+#favorites .favorite .map-image{
+	padding: 0;
+}
+#favorites .favorite .map-image img{
+    margin: 0 auto;
+    display: block;
+}
+#map{
+  height: 80vh;
+  width: 100%;
+}
+#map.loged{
+	height: 67vh;
+}
+#subtitle-map .red, #subtitle-map-mobile .red{
+	color: #c30000;
+	text-align: center;
+}
+#subtitle-map .blue, #subtitle-map-mobile .blue{
+	color: #1500b8;
+	text-align: center;
+}
+#subtitle-map .grey, #subtitle-map-mobile .grey{
+	color: #5f5f5f;
+	text-align: center;
+}
+#subtitle-map-mobile{
+  display: none;
+}
+#subtitle-map, #subtitle-map-mobile{
+  padding: 10px 15px;
+  height: 10vh;
+}
+#subtitle-map.row, #subtitle-map-mobile.row{
+  margin: 0;
+}
+#subtitle-map img, #subtitle-map-mobile img{
+  height: 40px;
+}
+#subtitle-map div, #subtitle-map-mobile img{
+  text-align: center;
+}
+#subtitle-map div b{
+  margin-left: 15px;
+}
+ /*Fim do Mapa*/
+
+ /*Modal*/
+
+#alagoModal .modal-content{
+	border-radius: 20px;
+}
+#alagoModal .modal-header{
+	border-bottom: 0;
+	padding-bottom: 2px;
+}
+#alagoModal .modal-header img{
+    border-radius: 30px;
+    height: 30px;
+}
+#alagoModal .modal-header span{
+	color: #000000;
+}
+#alagoModal .modal-body{
+	padding-top: 0;
+	text-align: center;
+}
+#alagoModal .modal-body h1{
+	margin: 0;
+	color: #318bea;
+	font-weight: 600;
+}
+#alagoModal .modal-body h4{
+	color: #000000;
+	font-weight: 100;
+}
+#alagoModal .modal-body input{
+	border: 0;
+}
+#alagoModal .modal-footer{
+	border: 0;
+	padding: 0;
+}
+#alagoModal .modal-footer button{
+	background-color: #0166d9;
+    width: 100%;
+	border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    text-transform: uppercase;
+    font-size: 23px;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 11px;
+    outline: none;
+}
+#alagoModal .modal-footer button:hover{
+	background: #ffffff;
+	color: #0166d9;
+	border: 1px solid #0166d9;
+}
+
+ /*Fim do Modal*/
+
+/*Botão radio*/
+
+
+.modal-body input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+.modal-body label {
+  color: #9a929e;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+  margin: 0;
+  width: 50%;
+}
+
+.modal-body input[type=radio]:checked + label {
+  color: #ccc8ce;
+  background: #675f6b;
+}
+
+.modal-body label + input[type=radio] + label {
+  border-left: solid 3px #675f6b;
+}
+
+.modal-body .radio-group {
+  border: solid 3px #675f6b;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*Fim do radio*/

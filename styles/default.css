@@ -76,32 +76,7 @@ p:first-of-type {
   
 }
 
-/*Mapa*/
 
-#map{
-  height: 80vh;
-  width: 100%;
-}
-#subtitle-map-mobile{
-  display: none;
-}
-#subtitle-map, #subtitle-map-mobile{
-  padding: 10px 90px;
-  height: 10vh;
-}
-#subtitle-map.row, #subtitle-map-mobile.row{
-  margin: 0;
-}
-#subtitle-map img, #subtitle-map-mobile img{
-  height: 40px;
-}
-#subtitle-map div, #subtitle-map-mobile img{
-  text-align: center;
-}
-#subtitle-map div b, #subtitle-map-mobile div b{
-  margin-left: 15px;
-}
- /*Fim do Mapa*/
 
 /*Logo*/
 #logo{
@@ -241,7 +216,7 @@ p:first-of-type {
     display: none;
   }
   #subtitle-map-mobile{
-    display: initial;
+    display: block!important;
   }
   #subtitle-map-mobile{
     padding: 8px 40px;
@@ -367,7 +342,7 @@ p:first-of-type {
 /* Menu celular */
 
 .navbar-collapse{
-  background: #f7f7f7;
+  background: #ffffff;
 }
 
 /* Fim do Menu Celular */
@@ -516,9 +491,9 @@ p:first-of-type {
 
 /* Footer */
 .footer{
-  padding: 20px 90px;
+  padding: 0 70px;
   background: #02546c;
-  height: 100px;
+  height: 60px;
   bottom: 0;
   width: 100%;
 }
@@ -527,7 +502,8 @@ p:first-of-type {
   margin-right: 0;
 }
 .footer img.logo{
-  height: 45px;
+  height: 60px;
+  padding: 10px;
 }
 /* Fim do Footer */
 
