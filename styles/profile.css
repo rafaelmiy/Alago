@@ -77,7 +77,7 @@
    font-size: 20px;
    color: #000000;
 }
-#profile .favorites .save{
+#profile .favorites .save, #profile .favorites .delete{
    padding: 10px 30px;
    border: 2px solid transparent;
    border-radius: 10px;
@@ -86,12 +86,20 @@
    color: #ffffff;
    font-weight: 600;
    margin-top: 20px;
+   margin-right: 20px;
 }
-#profile .favorites .save:hover{
+#profile .favorites .save:hover, #profile .favorites .delete:hover{
    border: 2px solid #1c61a7;
    background: transparent;
    color: #1c61a7;
    text-decoration: none;
+}
+#profile .favorites .delete{
+   background: #df2a00;
+}
+#profile .favorites .delete:hover{
+   border: 2px solid #df2a00;
+   color: #df2a00;
 }
 #profile .jscolor{
    outline: none;
