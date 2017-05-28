@@ -50,6 +50,9 @@
 #profile .infos a.button i{
    margin-right: 20px;
 }
+#profile .favorites{
+   padding-bottom: 40px;
+}
 #profile .favorites h1{
    color: #000000;
    font-weight: 
@@ -69,4 +72,32 @@
    border: 0;
    border-bottom: 1px solid #000000;
    outline: none;
+}
+#profile .favorites span{
+   font-size: 20px;
+   color: #000000;
+}
+#profile .favorites .save{
+   padding: 10px 30px;
+   border: 2px solid transparent;
+   border-radius: 10px;
+   background: #1c61a7;
+   font-size: 21px;
+   color: #ffffff;
+   font-weight: 600;
+   margin-top: 20px;
+}
+#profile .favorites .save:hover{
+   border: 2px solid #1c61a7;
+   background: transparent;
+   color: #1c61a7;
+   text-decoration: none;
+}
+#profile .jscolor{
+   outline: none;
+   border-radius: 10px;
+   border: 1px solid black;
+}
+#color-favorite{
+   margin-bottom: 40px;
 }

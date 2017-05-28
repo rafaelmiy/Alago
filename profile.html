@@ -51,6 +51,7 @@
     <!-- modified CSS -->
     <link href="styles/default.css" rel="stylesheet">
     <link href="styles/profile.css" rel="stylesheet">
+    <script src="scripts/jscolor.js"></script>
   </head>
 
   <body>
@@ -108,8 +109,18 @@
         <b>Casa da Joana</b>
         <b>Casa do João</b>
         <b>Escola do João</b>
+        <b>+</b>
         <input type="text" placeholder="Nome do local">
         <input type="text" placeholder="Endereço">
+        <span>Cor</span>
+        <button id="color-favorite" class="jscolor {valueElement:null,value:'66ccff'}" style="width:40px; height:40px;"></button>
+        <script>
+        function setTextColor(picker) {
+          document.getElementsByTagName('body')[0].style.color = '#' + picker.toString()
+        }
+        </script>
+        <br>
+        <a href="#" class="save">Salvar</a>
       </div>
     </div>
 
