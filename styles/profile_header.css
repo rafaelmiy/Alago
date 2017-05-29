@@ -1,0 +1,27 @@
+.user{
+  width: 100%;
+  margin-top: 6px;
+}
+.user:hover{
+  border-bottom: 0;
+}
+.user img{
+  height: 33px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+.user b{
+  font-weight: 500;
+  vertical-align: middle;
+   text-overflow: ellipsis;
+   overflow: hidden !important;
+   display: inline-block;
+   width: 65%;
+   white-space: nowrap;
+}
+#logedIn{
+   border: 0;
+}
+#navbar .presentation.profile{
+   padding-top: 11px;
+}

@@ -13,62 +13,8 @@
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <script src="scripts/firebase_config.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-      $(document).ready(function(){
-
-        $("div#login").click(function(){
-          var name = $("#name").val();
-          var pass = $("#pass").val();
-          
-          firebase.auth().signInWithEmailAndPassword(name, pass)
-            .then(function(user){
-              alert("Usuario logado com sucesso");
-          }).catch(function(error){
-            var errorCode = error.code;
-              var errorMessage = error.message;
-              alert(errorMessage);
-              console.log(error);
-          });
-        });
-
-        $("div#register").click(function(){
-          var regname =  $("#regname").val();
-          var regpass = $("#regpass").val();
-          var reregpass = $("#reregpass").val();
-
-          if(regname == ''){
-            alert("Preencha o email");
-            return;
-          }
-          if(regpass==''){
-            alert("Preencha a senha");
-            return;
-          }
-          if(regpass!=reregpass){
-            alert("As senhas nao conferem");
-            return;
-          }
-
-          console.log("Efetuando cadastro do usuario");
-          firebase.auth().createUserWithEmailAndPassword(regname, regpass)
-            .then(function(user){
-              var user = firebase.auth().currentUser;
-              console.log("Usuario criado com sucesso", user);
-              alert("Usuario cadastrado com sucesso");
-            })
-            .catch(function(error){
-              var errorCode = error.code;
-              var errorMessage = error.message;
-              if (errorCode == 'auth/weak-password') {
-                alert('The password is too weak.');
-              } else {
-                alert(errorMessage);
-              }
-              console.log(error);
-            })
-        });
-      });
-    </script>
+    <!-- Script de login -->
+    <script src="scripts/firebase_login.js"></script>
 
     
     <!-- Bootstrap -->

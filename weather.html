@@ -37,6 +37,7 @@
     <!-- modified CSS -->
     <link href="styles/default.css" rel="stylesheet">
     <link href="styles/weather.css" rel="stylesheet">
+    <link href="styles/profile_header.css" rel="stylesheet">
   </head>
 
   <body>
@@ -57,11 +58,9 @@
             <ul class="nav navbar-nav alago-links">
               <li class="logo"><a href="index.html"><img id="logo" href="/" src="images/logo_alago.png"></a></li>
               <li class="presentation"><a class="link mapa" href="map.html">Mapa</a></li>
-              <li class="presentation"><a class="link vai-chover active" href="#">Vai chover?</a></li>
+              <li class="presentation"><a class="link vai-chover" href="weather.html">Vai chover?</a></li>
               <li class="presentation"><a class="link sobre" href="about.html">Sobre</a></li>
-              <li class="presentation"><a class="link login" href="login.html">Login</a></li>
-              <!-- <li class="presentation"><a class="link login loged" id="user" href="profile.html"><img src="images/users/pati.jpg"><b>Pati Peti</b>&nbsp;&nbsp;<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li> -->
-              <!-- <li class="presentation" id="alagou"><a class="btn-alago" href="#">alagou!</a></li> -->
+              <li class="presentation profile"><a class="link login" id="logedOut" href="login.html">Login</a><a class="link login user" style="display:none" id="logedIn" href="profile.html"><img src="images/users/pati.jpg"><b>Pati Peti</b><!-- &nbsp;&nbsp;<i class="fa fa-chevron-down" aria-hidden="true"></i> --></a></li>
             </ul>
 
             <ul class="nav navbar-nav alago-button">
@@ -123,5 +122,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/profile_header.js"></script>
   </body>
 </html>
