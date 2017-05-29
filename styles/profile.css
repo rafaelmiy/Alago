@@ -72,10 +72,14 @@
    border: 0;
    border-bottom: 1px solid #000000;
    outline: none;
+   margin-bottom: 15px;
 }
 #profile .favorites span{
    font-size: 20px;
    color: #000000;
+}
+#profile .favorites .locals{
+   margin-bottom: 15px;
 }
 #profile .favorites .save, #profile .favorites .delete{
    padding: 10px 30px;

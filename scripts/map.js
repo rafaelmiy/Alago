@@ -98,11 +98,6 @@ autoUpdate();
     });
   });
 }
-$( document ).ready(function() {
-
-    $('#alagoModal').modal('show');
-
-});
 var xmlns = "http://www.w3.org/2000/svg",
   xlinkns = "http://www.w3.org/1999/xlink",
   select = function(s) {
@@ -241,5 +236,9 @@ function createInteraction(){
   tl.progress(1);
   
 }
+
+$("#alagou").click(function(){
+    $('#alagoModal').modal('show');
+  });
 
 

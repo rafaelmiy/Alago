@@ -93,22 +93,26 @@
         <h1>Meus Dados</h1>
       </div>
       <div class="col-md-2 image">
-        <img src="images/users/pati.jpg">
+        <img>
       </div>
       <div class="col-md-10 infos">
-        <label>Nome</label>
-        <input id="name" type="text" value="Pati Peti" disabled="disabled">
+        <div id="box-name">
+          <label>Nome</label>
+          <input id="name" type="text" value="" disabled="disabled">
+        </div>
         <label>E-mail</label>
-        <input id="email" type="email" value="patipeti@alaguei.com" disabled="disabled">
+        <input id="email" type="email" value="" disabled="disabled">
         <a href="#" class="button"><i class="fa fa-facebook" aria-hidden="true"></i>Desvincular Facebook</a>
       </div>
       <div class="col-md-2"></div>
       <div class="col-md-10 favorites">
         <h1>Favoritos</h1>
-        <b>Casa da Joana</b>
-        <b>Casa do João</b>
-        <b>Escola do João</b>
-        <b>+</b>
+        <div class='locals'>
+          <b>Casa da Joana</b>
+          <b>Casa do João</b>
+          <b>Escola do João</b>
+          <b>+</b>
+        </div>
         <input type="text" placeholder="Nome do local">
         <input type="text" placeholder="Endereço">
         <span>Cor</span>
@@ -135,6 +139,7 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="scripts/profile_header.js"></script>
+    <script src="scripts/header_profile.js"></script>
+    <script src="scripts/profile.js"></script>
   </body>
 </html>
