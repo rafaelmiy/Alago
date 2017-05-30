@@ -8,6 +8,7 @@ $(document).ready(function(){
         .then(function(user){
     	var user = firebase.auth().currentUser;
       	// alert("Usuario logado com sucesso");
+      	
       	window.location.replace("index.html");
 
       	var email = user.email;
