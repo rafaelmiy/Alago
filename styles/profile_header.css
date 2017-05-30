@@ -22,6 +22,9 @@
 #logedIn{
    border: 0;
 }
+#logedOut{
+   margin-top: 6px!important;
+}
 #navbar .presentation.profile{
    padding-top: 11px;
 }
