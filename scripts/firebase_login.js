@@ -8,7 +8,6 @@ $(document).ready(function(){
         .then(function(user){
     	var user = firebase.auth().currentUser;
       	// alert("Usuario logado com sucesso");
-      	
       	window.location.replace("index.html");
 
       	var email = user.email;
@@ -56,7 +55,8 @@ $(document).ready(function(){
         return;
       }
 
-      console.log("Efetuando cadastro do usuario");
+      // console.log("Efetuando cadastro do usuario");
+      window.location.replace("index.html");
       firebase.auth().createUserWithEmailAndPassword(regname, regpass)
         .then(function(user){
           var user = firebase.auth().currentUser;
