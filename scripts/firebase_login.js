@@ -55,8 +55,8 @@ $(document).ready(function(){
         return;
       }
 
-      // console.log("Efetuando cadastro do usuario");
-      window.location.replace("index.html");
+      console.log("Efetuando cadastro do usuario");
+
       firebase.auth().createUserWithEmailAndPassword(regname, regpass)
         .then(function(user){
           var user = firebase.auth().currentUser;
@@ -89,7 +89,8 @@ $(document).ready(function(){
 
           }
           console.log("Usuario criado com sucesso", user);
-          alert("Usuario cadastrado com sucesso");
+          // alert("Usuario cadastrado com sucesso");
+          window.location.replace("index.html");
 
         })
         .catch(function(error){
