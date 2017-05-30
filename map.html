@@ -68,7 +68,7 @@
     </div>
     
     <!-- Mapa -->
-    <div id="favorites" class="container">
+    <div id="favorites">
       <div class="row">
         <div class="col-md-2 col-lg-3 favorite-box">
           <div class="favorite">
@@ -174,20 +174,43 @@
             <img src="images/users/pati.jpg">
             <span class="modal-title">Pati Peti</span>
           </div>
-          <div class="modal-body">
+          <div class="modal-body row">
             <h1>Alagou!</h1>
             <h4>Compartilhe o que está acontecendo.</h4>
-            <input placeholder="Endereço">
-            <img src="images/sub_block.png">
-            <div class="radio-group">
-              <input type="radio" id="option-one" name="situation"><label for="option-one">Bloqueado</label><input type="radio" id="option-two" name="situation"><label for="option-two">Transitável</label>
+            <div class="container input">
+                <div class="group">      
+                  <input type="text" class="full" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Endereço</label>
+                </div>
             </div>
+            <div class="radio-area">
+              <div class="col-md-2 state">
+                <img src="images/sub_block.png">
+              </div>
+              <div class="radio-group col-md-8">
+                <input type="radio" id="option-one" name="situation"><label for="option-one">Bloqueado</label><input type="radio" id="option-two" name="situation"><label for="option-two">Transitável</label>
+              </div>
+              <div class="col-md-2 state">
+                <img src="images/sub_trans.png">
+              </div>
+            </div>
+            <div style="clear:both"></div>
+
+            
+
             <div id="comment-text">
-              <label>Escreva um comentário</label>
-              <input id="comment" type="text" placeholder="Escreva aqui">
+              <div class="container input">
+                <div class="group">      
+                  <input type="text" class="full" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Escreva uma descrição</label>
+                </div>
+            </div>
             </div>
           </div>
-          <img src="images/sub_trans.png">
           <div class="modal-footer">
             <button type="button" class="btn">enviar</button>
           </div>

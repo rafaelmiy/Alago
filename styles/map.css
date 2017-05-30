@@ -1,9 +1,10 @@
 /*Mapa*/
 
 #favorites{
-	width: 100%;
+	width: 100%!important;
 	height: 13vh;
 	margin: 0;
+	padding-left: 10px;
 }
 #favorites  > .row {
   overflow-x: auto;
@@ -117,6 +118,15 @@
 }
 #alagoModal .modal-body input{
 	border: 0;
+	color: #000000;
+	font-weight: 300;
+}
+#alagoModal .modal-body .state img{
+	height: 55px;
+}
+#alagoModal .modal-body .radio-area{
+	width: 80%;
+	margin: 0 auto;
 }
 #alagoModal .modal-footer{
 	border: 0;
@@ -177,10 +187,146 @@
   display: inline-block;
   border-radius: 10px;
   overflow: hidden;
-  width: 80%;
+  /*width: 80%;*/
   display: block;
   margin: 0 auto;
+  padding: 0;
 }
 
 
 /*Fim do radio*/
+
+/*Input do Modal*/
+
+* { box-sizing:border-box; }
+
+/* basic stylings ------------------------------------------ */
+
+.container.input{ 
+  font-family:'Roboto';
+  width:90%; 
+  margin:30px auto 0; 
+  display:block; 
+  background:#FFF;
+  padding:0 50px 10px;
+  text-align: left;
+}
+.container.input label{
+	padding-left: 0;
+}
+.input h2 		 { 
+  /*text-align:center; */
+  margin-bottom:50px; 
+}
+.input h2 small { 
+  font-weight:normal; 
+  color:#888; 
+  display:block; 
+}
+
+/* form starting stylings ------------------------------- */
+.input .group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+.input .group input{
+	border-bottom: 2px solid!important;
+}
+.input input 				{
+  font-size:18px;
+  padding:10px 10px 5px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+.input input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+.input label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.input input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#27358d;
+}
+input#option-one:valid ~ label{
+	color: red;
+}
+input#option-two:valid ~ label{
+	color: #27358d;
+}
+
+/* BOTTOM BARS ================================= */
+.input .bar 	{ position:relative; display:block; width:100%; }
+.input .bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#27358d; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.input .bar:before {
+  left:50%;
+}
+.input .bar:after {
+  right:50%; 
+}
+
+/* active state */
+.input input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.input .highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+.input input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:; }
+  to 	{ width:0; background:transparent; }
+}
+
+.full{
+	width: 100%!important;
+}
+/*Fim do input do modal
