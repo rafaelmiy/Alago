@@ -97,7 +97,16 @@ $(document).ready(function(){
           var errorCode = error.code;
           var errorMessage = error.message;
           if (errorCode == 'auth/weak-password') {
-            alert('The password is too weak.');
+            // alert('The password is too weak.');
+
+			swal({
+			  title: "Você consegue uma senha melhor vai...",
+			  // text: "I will close in 2 seconds.",
+			  timer: 2000,
+			  showConfirmButton: false,
+			  type: "error"
+			});
+
           } else {
             alert(errorMessage);
           }
