@@ -17,3 +17,7 @@ if(email != null){
 	$('#logedIn img').attr('src', picture);
 	$('#logedIn b').html(name);
 }
+$('#logOff').click(function(){
+	sessionStorage.clear();
+	window.location.replace("index.html");
+});

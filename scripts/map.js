@@ -237,8 +237,4 @@ function createInteraction(){
   
 }
 
-$("#alagou").click(function(){
-    $('#alagoModal').modal('show');
-  });
-
 

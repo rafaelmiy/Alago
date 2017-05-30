@@ -9,6 +9,7 @@
 #favorites  > .row {
   overflow-x: auto;
   white-space: nowrap;
+  width: 100%;
 }
 #favorites  > .row > .col-md-2 {
   display: inline-block;
@@ -16,6 +17,12 @@
 }
 #favorites .favorite-box{
 	border-right: 1px solid rgba(0, 0, 0, 0.30);
+}
+#favorites.logedIn{
+	display: block!important;
+}
+#favorites.logedOut{
+	display: none!important;
 }
 #favorites .favorite{
 	padding-top: 5px;
@@ -51,8 +58,11 @@
   height: 80vh;
   width: 100%;
 }
-#map.loged{
-	height: 66.7vh;
+#map.logedIn{
+	height: 65vh;
+}
+#map.logedOut{
+	height: 78vh;
 }
 #subtitle-map .red, #subtitle-map-mobile .red{
 	color: #c30000;

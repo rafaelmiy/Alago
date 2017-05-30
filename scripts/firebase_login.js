@@ -7,7 +7,8 @@ $(document).ready(function(){
       firebase.auth().signInWithEmailAndPassword(name, pass)
         .then(function(user){
     	var user = firebase.auth().currentUser;
-      	alert("Usuario logado com sucesso");
+      	// alert("Usuario logado com sucesso");
+      	window.location.replace("index.html");
 
       	var email = user.email;
       	var picture = user.photoURL;
