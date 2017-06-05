@@ -59,7 +59,7 @@
       ga('create', 'UA-100130231-1', 'auto');
       ga('send', 'pageview');
     </script>
-    
+
     <!-- modified CSS -->
     <link href="styles/default.css" rel="stylesheet">
     <link href="styles/profile.css" rel="stylesheet">
@@ -126,8 +126,24 @@
           <b>Escola do João</b>
           <b>+</b>
         </div>
-        <input type="text" placeholder="Nome do local">
-        <input type="text" placeholder="Endereço">
+        <div class="input">
+          <div class="group">      
+            <input type="text" class="full" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Nome do local</label>
+          </div>
+        </div>
+        <div class="input">
+          <div class="group">      
+            <input type="text" class="full" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Endereço</label>
+          </div>
+        </div>
+        <!-- <input type="text" placeholder="Nome do local">
+        <input type="text" placeholder="Endereço"> -->
         <span>Cor</span>
         <button id="color-favorite" class="jscolor {valueElement:null,value:'66ccff'}" style="width:40px; height:40px;"></button>
         <script>
