@@ -39,13 +39,13 @@
    color: #ffffff;
 }
 #casa{
-      background-color: yellow;
+      background-color: yellow!important;
 }
 #trabalho{
-         background-color: red;
+         background-color: red!important;
 }
 #escola{
-         background-color: green;
+         background-color: green!important;
 }
    
 #profile .infos a.button:hover{
