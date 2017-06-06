@@ -31,8 +31,14 @@
 	height: 70px;
 	border-radius: 8px;
 }
-#favorites .favorite .texts{
-	border-left: 4px solid blue;
+#favorites .favorite .yellow{
+	border-left: 4px solid yellow;
+}
+#favorites .favorite .green{
+		border-left: 4px solid green;
+}
+#favorites .favorite .red{
+		border-left: 4px solid red;
 }
 #favorites .favorite .texts h4{
 	color: #000000;
