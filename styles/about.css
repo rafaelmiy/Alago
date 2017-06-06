@@ -1,3 +1,7 @@
+.row{
+	margin-left: 0!important;
+	margin-right: 0!important;
+}
 #section0, #section1, #section2, #section3{
 	height: 90vh;
 }
@@ -48,4 +52,122 @@
 	margin-top: 15px;
 	font-size: 23px;
 	font-weight: 200;
+}
+
+
+#section2{
+	text-align: center;
+	height: 100vh;
+}
+#section2 .section2-text{
+	margin-top: 45px;
+	padding: 0 30%;
+}
+#section2 .section2-text h2{
+	display: initial;
+	margin-right: 15px;
+    color: #4159b4;
+}
+#section2 .section2-text img{
+	height: 40px;
+}
+#section2 .section2-text b{
+	display: block;
+	font-size: 25px;
+	font-weight: 100;
+	margin-top: 10px;
+}
+#section2 .section2-image img{
+	width: 30%;
+}
+
+
+#section3{
+	height: 100vh;
+	text-align: center;
+}
+#section3 h1{
+	font-size: 70px;
+	color: #337fff;
+	margin-bottom: 0;
+}
+#section3 h3{
+	font-size: 35px;
+	color: #4159b4;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+#section3 .section3-text{
+	margin-top: 9%;
+	padding: 0 15%;
+}
+#section3 .section3-text b{
+	font-size: 22px;
+	font-weight: 100;
+	display: block;
+}
+#section3 .section3-image img{
+	height: 80vh;
+}
+
+
+#section4{
+	text-align: center;
+	height: 85vh;
+}
+#section4 .section4-text h1, #section4 .section4-text h3{
+	color: #4159b4;
+}
+#section4 .section4-text h3{
+	font-weight: 100;
+}
+#section4 .section4-text img{
+	height: 55px;
+	margin-top: 90px;
+}
+
+
+@media only screen and (max-width: 768px){
+	#section0, #section1, #section2, #section3{
+		height: 100%;
+	}
+	#section0 .section0-text{
+	    padding: 5vh 0 0;
+	    height: 100%;
+	}
+	#section0 .section0-text img{
+		height: 70px;
+	}
+	#section0 .section0-image, #section1 .section1-image{
+		text-align: center;
+	}
+
+	.section-desktop{
+		display: none;
+	}
+	.section-mobile{
+		display: block!important;
+	}
+	#section1 .section1-image img{
+		height: 61vh;
+	}
+	#section2{
+		margin-top: 40px;
+		text-align: center;
+	}
+	#section2 .section2-text{
+		padding: 40px;
+		margin-bottom: 30px;
+	}
+	#section2 .section2-image img{
+		width: 60vh;
+	}
+
+	#section3 .section3-text{
+		padding: 40px;
+	}
+
+	#section4{
+		padding-top: 10%;
+	}
 }
