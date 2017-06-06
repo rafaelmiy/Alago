@@ -390,8 +390,11 @@ p:first-of-type {
   margin-left: 0;
   margin-right: 0;
 }
+.how-it-works .col-md-4{
+	text-align: right;
+}
 .instructions{
-  padding: 50px 80px 0 100px;
+  padding: 50px 80px 0 45px;
   line-height: 25px;
 }
 .instructions b{
