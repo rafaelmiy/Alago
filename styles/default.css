@@ -1,6 +1,8 @@
 /* @override 
 	http://forge.dev/placeholder/style.css */
-
+h1, h2, h3, h4{
+	font-family: 'Open Sans';
+}
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
