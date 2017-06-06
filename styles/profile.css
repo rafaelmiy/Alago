@@ -38,6 +38,16 @@
    font-size: 21px;
    color: #ffffff;
 }
+#casa{
+      background-color: yellow;
+}
+#trabalho{
+         background-color: red;
+}
+#escola{
+         background-color: green;
+}
+   
 #profile .infos a.button:hover{
    text-decoration: none;
    border: 2px solid #3b5998;
