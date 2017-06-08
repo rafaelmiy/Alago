@@ -12,6 +12,9 @@
 #profile .infos{
    padding-bottom: 40px
 }
+#profile .infos .box-name input{
+   background-color: #ffffff;
+}
 #profile .infos label{
    margin-bottom: 0;
    color: #000000;
