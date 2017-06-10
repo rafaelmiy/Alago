@@ -251,4 +251,11 @@ $( document ).ready(function() {
         type: "success"
       });
     });
+
+    var name = sessionStorage.getItem('name');
+    var picture = sessionStorage.getItem('picture');
+    if(picture != 'images/users/default.png'){
+      $("#picture").attr('src', picture);
+    }
+    $("#name").html(name);
 });
